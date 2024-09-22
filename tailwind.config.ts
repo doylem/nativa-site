@@ -51,6 +51,24 @@ const config: Config = {
           "4": "hsl(var(--chart-4))",
           "5": "hsl(var(--chart-5))",
         },
+
+        "nativa-green": "#838b7d",
+        "nativa-olive": "#526147",
+        "nativa-pink": "#d6c4d7",
+        "nativa-orange": "#faedd8",
+        "nativa-white": "#faf6f1",
+
+        green: {
+          light: "hsl(var(--n-green-light))",
+          dark: "hsl(var(--n-green-mid-dark))",
+        },
+        pink: {
+          light: "hsl(var(--n-pink-light))",
+        },
+        orange: {
+          light: "hsl(var(--n-orange-light))",
+          superlight: "hsl(var(--n-orange-super-light))",
+        },
       },
       borderRadius: {
         lg: "var(--radius)",

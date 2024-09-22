@@ -2,12 +2,9 @@ import { Button } from "@/components/ui/button"
 import { ArrowRight, BookOpen, Users, Lightbulb, Award } from "lucide-react"
 import Link from "next/link"
 
-const logoStyle = `
-`
-
 export default function NativaLandingPage() {
   return (
-    <div className="min-h-screen bg-green-50">
+    <div className="min-h-screen bg-nativa-green">
       {/* Hero Section */}
       <section className="relative h-screen flex items-center justify-center overflow-hidden">
         <div className="absolute inset-0 z-0">
@@ -18,7 +15,7 @@ export default function NativaLandingPage() {
           />
           <div className="absolute inset-0 bg-black opacity-50"></div>
         </div>
-        <div className="relative z-10 text-center text-white">
+        <div className="relative z-10 text-center text-white p-8">
           <div className="flex justify-center mb-8">
             <img
               src="/images/nativa-site-logo.png"
@@ -48,7 +45,7 @@ export default function NativaLandingPage() {
       {/* About Section */}
       <section className="py-20 px-4 bg-white">
         <div className="max-w-6xl mx-auto">
-          <h2 className="text-4xl md:text-5xl font-bold mb-8 text-center text-green-800">
+          <h2 className="text-4xl md:text-5xl font-bold mb-8 text-center text-nativa-olive">
             Our Mission
           </h2>
           <p className="text-xl text-center mb-12 text-gray-700">
@@ -58,8 +55,8 @@ export default function NativaLandingPage() {
           </p>
           <div className="grid md:grid-cols-2 gap-12">
             <div className="space-y-4 flex flex-col items-center text-center">
-              <BookOpen size={48} className="text-green-600" />
-              <h3 className="text-2xl font-semibold text-green-700">
+              <BookOpen size={48} className="text-nativa-olive" />
+              <h3 className="text-2xl font-semibold text-nativa-olive">
                 Education
               </h3>
               <p className="text-gray-600">
@@ -68,8 +65,8 @@ export default function NativaLandingPage() {
               </p>
             </div>
             <div className="space-y-4 flex flex-col items-center text-center">
-              <Users size={48} className="text-green-600" />
-              <h3 className="text-2xl font-semibold text-green-700">
+              <Users size={48} className="text-nativa-olive" />
+              <h3 className="text-2xl font-semibold text-nativa-olive">
                 Consulting
               </h3>
               <p className="text-gray-600">
@@ -78,8 +75,8 @@ export default function NativaLandingPage() {
               </p>
             </div>
             <div className="space-y-4 flex flex-col items-center text-center">
-              <Lightbulb size={48} className="text-green-600" />
-              <h3 className="text-2xl font-semibold text-green-700">
+              <Lightbulb size={48} className="text-nativa-olive" />
+              <h3 className="text-2xl font-semibold text-nativa-olive">
                 Innovation
               </h3>
               <p className="text-gray-600">
@@ -88,8 +85,8 @@ export default function NativaLandingPage() {
               </p>
             </div>
             <div className="space-y-4 flex flex-col items-center text-center">
-              <Award size={48} className="text-green-600" />
-              <h3 className="text-2xl font-semibold text-green-700">
+              <Award size={48} className="text-nativa-olive" />
+              <h3 className="text-2xl font-semibold text-nativa-olive">
                 Compliance
               </h3>
               <p className="text-gray-600">
@@ -102,14 +99,14 @@ export default function NativaLandingPage() {
       </section>
 
       {/* Services Section */}
-      <section className="py-20 px-4 bg-green-100" id="our-services">
+      <section className="py-20 px-4 bg-nativa-pink" id="our-services">
         <div className="max-w-6xl mx-auto">
-          <h2 className="text-4xl md:text-5xl font-bold mb-12 text-center text-green-800">
+          <h2 className="text-4xl md:text-5xl font-bold mb-12 text-center text-nativa-olive">
             Our Services
           </h2>
           <div className="grid md:grid-cols-2 gap-8">
             <div className="bg-white p-8 rounded-lg shadow-lg">
-              <h3 className="text-3xl font-bold mb-4 text-green-700">
+              <h3 className="text-3xl font-bold mb-4 text-nativa-olive">
                 Educational Programs
               </h3>
               <ul className="list-disc list-inside space-y-2 text-gray-600">
@@ -121,7 +118,7 @@ export default function NativaLandingPage() {
               </ul>
             </div>
             <div className="bg-white p-8 rounded-lg shadow-lg">
-              <h3 className="text-3xl font-bold mb-4 text-green-700">
+              <h3 className="text-3xl font-bold mb-4 text-nativa-olive">
                 Consulting Services
               </h3>
               <ul className="list-disc list-inside space-y-2 text-gray-600">
@@ -139,17 +136,17 @@ export default function NativaLandingPage() {
       {/* Directors Section */}
       <section className="py-20 px-4 bg-white">
         <div className="max-w-6xl mx-auto">
-          <h2 className="text-4xl md:text-5xl font-bold mb-12 text-center text-green-800">
+          <h2 className="text-4xl md:text-5xl font-bold mb-12 text-center text-nativa-olive">
             Meet Our Directors
           </h2>
           <div className="grid md:grid-cols-2 gap-12">
-            <div className="bg-green-50 p-8 rounded-lg shadow-lg">
+            <div className="bg-nativa-green p-8 rounded-lg shadow-lg">
               <img
                 src="/placeholder.svg?height=400&width=400"
                 alt="Bec Doyle"
                 className="w-48 h-48 rounded-full mx-auto mb-6"
               />
-              <h3 className="text-3xl font-bold mb-4 text-center text-green-700">
+              <h3 className="text-3xl font-bold mb-4 text-center text-nativa-olive">
                 Bec Doyle
               </h3>
               <p className="text-gray-600 text-center">
@@ -159,13 +156,13 @@ export default function NativaLandingPage() {
                 clients.
               </p>
             </div>
-            <div className="bg-green-50 p-8 rounded-lg shadow-lg">
+            <div className="bg-nativa-green p-8 rounded-lg shadow-lg">
               <img
                 src="/placeholder.svg?height=400&width=400"
                 alt="Liz Warburton"
                 className="w-48 h-48 rounded-full mx-auto mb-6"
               />
-              <h3 className="text-3xl font-bold mb-4 text-center text-green-700">
+              <h3 className="text-3xl font-bold mb-4 text-center text-nativa-olive">
                 Liz Warburton
               </h3>
               <p className="text-gray-600 text-center">
@@ -180,7 +177,7 @@ export default function NativaLandingPage() {
       </section>
 
       {/* CTA Section */}
-      <section className="py-20 px-4 bg-green-800 text-white">
+      <section className="py-20 px-4 bg-nativa-olive text-white">
         <div className="max-w-4xl mx-auto text-center">
           <h2 className="text-4xl md:text-5xl font-bold mb-8">
             Ready to Grow Your Cannabis Knowledge?
@@ -189,14 +186,14 @@ export default function NativaLandingPage() {
             Whether you're looking to expand your understanding of cannabis or
             need expert guidance for your business, Nativa is here to help.
           </p>
-          <Button className="text-lg px-8 py-4 bg-white text-green-800 hover:bg-green-100">
+          <Button className="text-lg px-8 py-4 bg-white text-nativa-olive hover:bg-green-100">
             Contact Us Today
           </Button>
         </div>
       </section>
 
       {/* Footer */}
-      <footer className="bg-green-900 text-white py-8">
+      <footer className="bg-slate-900 text-white py-8">
         <div className="max-w-6xl mx-auto px-4 text-center">
           <p className="mb-4">
             &copy; 2023 Nativa Cannabis Education & Consulting. All rights

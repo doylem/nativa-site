@@ -7,7 +7,7 @@
   --foreground: #171717;
 
   --n-green-light: #838b7d;
-  --n-green-dark: #526147;
+  --n-green-mid-dark: #526147;
   --n-pink-light: #d6c4d7;
   --n-orange-light: #faedd8;
   --n-orange-super-light: #faf6f1;
@@ -23,7 +23,7 @@
 body {
   color: var(--foreground);
   background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+  /* font-family: Arial, Helvetica, sans-serif; */
 }
 
 @layer utilities {
