@@ -1,6 +1,7 @@
 import { Button } from "@/components/ui/button"
 import { ArrowRight, BookOpen, Users, Lightbulb, Award } from "lucide-react"
 import Link from "next/link"
+import Image from "next/image"
 
 export default function NativaLandingPage() {
   return (
@@ -8,8 +9,10 @@ export default function NativaLandingPage() {
       {/* Hero Section */}
       <section className="relative h-screen flex items-center justify-center overflow-hidden">
         <div className="absolute inset-0 z-0">
-          <img
-            src="/images/hero.jpg?height=1080&width=1920"
+          <Image
+            src="/images/hero.jpg"
+            height={1080}
+            width={1920}
             alt="Cannabis education"
             className="w-full h-full object-cover"
           />
@@ -17,8 +20,10 @@ export default function NativaLandingPage() {
         </div>
         <div className="relative z-10 text-center text-nativa-white p-8">
           <div className="flex justify-center mb-8">
-            <img
+            <Image
               src="/images/nativa-site-logo.png"
+              width={1659}
+              height={568}
               alt="Nativa logo"
               className="object-center"
               style={{ width: "50%", minWidth: "300px" }}
@@ -142,9 +147,11 @@ export default function NativaLandingPage() {
           </h2>
           <div className="grid md:grid-cols-2 gap-12">
             <div className="bg-nativa-green p-8 rounded-lg shadow-lg">
-              <img
+              <Image
                 src="/images/director-bec.jpg"
                 alt="Bec Doyle"
+                width={500}
+                height={500}
                 className="w-56 h-56 rounded-full mx-auto mb-6"
               />
               <h3 className="text-3xl font-bold mb-4 text-center text-nativa-white">
@@ -161,8 +168,10 @@ export default function NativaLandingPage() {
               </p>
             </div>
             <div className="bg-nativa-green p-8 rounded-lg shadow-lg">
-              <img
+              <Image
                 src="/images/director-liz.jpg"
+                width={500}
+                height={500}
                 alt="Liz Warburton"
                 className="w-56 h-56 rounded-full mx-auto mb-6"
               />
@@ -185,8 +194,10 @@ export default function NativaLandingPage() {
 
       <section className="relative h-screen flex items-center justify-center overflow-hidden">
         <div className="absolute inset-0 z-0">
-          <img
+          <Image
             src="/images/leaf-bg.jpg?height=1080&width=1920"
+            height={1080}
+            width={1920}
             alt="Cannabis education"
             className="w-full h-full object-cover"
           />
@@ -211,7 +222,7 @@ export default function NativaLandingPage() {
       {/* CTA Section 
       <section className="py-20 px-4 bg-nativa-olive text-nativa-white">
         <div className="absolute inset-0 z-0">
-          <img
+          <Image
             src="/images/hero.jpg?height=1080&width=1920"
             alt="Cannabis education"
             className="w-full h-full object-cover"
