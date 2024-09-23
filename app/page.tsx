@@ -19,7 +19,7 @@ export default function NativaLandingPage() {
             src="/images/hero.jpg"
             height={1080}
             width={1920}
-            alt="Cannabis education"
+            alt="Nativa homepage banner"
             className="w-full h-full object-cover"
           />
           <div className="absolute inset-0 bg-black opacity-50"></div>
@@ -42,8 +42,8 @@ export default function NativaLandingPage() {
             Nativa
           </h1>
           <p className="text-xl md:text-2xl mb-8">
-            Elevating the cannabis industry in Australia by fostering
-            transparency, collaboration, and excellence.
+            Elevating the medicinal cannabis industry in Australia and across
+            the globe by fostering transparency, collaboration, and excellence.
           </p>
           <Link href="#our-services">
             <Button className="text-lg px-8 py-4 bg-nativa-white text-nativa-olive hover:bg-nativa-green hover:text-nativa-white">
@@ -61,11 +61,11 @@ export default function NativaLandingPage() {
             Our Mission
           </h2>
           <p className="text-xl text-center mb-12 text-gray-700">
-            Our vision is to educate & elevate cannabis in Australia and across
-            the globe by fostering a culture of transparency, collaboration and
-            excellence across all facets of industry. We choose to work with
-            exceptional partners who truly highlight the patient journey and
-            contribute to furthering clinical achievements.
+            Our vision is to educate & elevate medicinal cannabis in Australia
+            and across the globe by fostering a culture of transparency,
+            collaboration and excellence across all facets of industry. We
+            choose to work with exceptional partners who truly highlight the
+            patient journey and contribute to furthering clinical achievements.
           </p>
           <div className="grid md:grid-cols-2 gap-12">
             <div className="space-y-4 flex flex-col items-center text-center">
@@ -75,10 +75,10 @@ export default function NativaLandingPage() {
               </h3>
               <p className="text-gray-600">
                 We deliver agnostic, tailored comprehensive workshops on
-                cannabis science, including practical product guidance, patient
-                management, and industry insights to pharmacies, clinics and MSL
-                groups. We work with CPD providers to deliver accredited
-                education to health care professionals.
+                medicinal cannabis science, including practical product
+                guidance, patient management, and industry insights to
+                pharmacies, clinics and MSL groups. We work with CPD providers
+                to deliver accredited education to health care professionals.
               </p>
             </div>
             <div className="space-y-4 flex flex-col items-center text-center">
@@ -102,11 +102,11 @@ export default function NativaLandingPage() {
               </h3>
               <p className="text-gray-600">
                 We specialise in the design and execution of clinical trials.
-                Work with us to include cannabis research in your business
-                strategy to attain robust observational data and quality
-                clinical outcomes. Engage Nativa and our extensive medical
-                research network to get the validated results you need to
-                accelerate your patient focused educational strategies.
+                Work with us to include medicinal cannabis research in your
+                business strategy to attain robust observational data and
+                quality clinical outcomes. Engage Nativa and our extensive
+                medical research network to get the validated results you need
+                to accelerate your patient focused educational strategies.
               </p>
             </div>
             <div className="space-y-4 flex flex-col items-center text-center">
@@ -139,11 +139,11 @@ export default function NativaLandingPage() {
                 Educational Programs
               </h3>
               <ul className="list-disc list-inside space-y-2 text-gray-600">
-                <li>Cannabis Science and Pharmacology</li>
+                <li>Medicinal Cannabis Science and Pharmacology</li>
                 <li>Cultivation Techniques and Best Practices</li>
-                <li>Cannabis Business Operations</li>
+                <li>Medicinal cannabis Business Operations</li>
                 <li>Legal and Regulatory Compliance</li>
-                <li>Medical Cannabis Applications</li>
+                <li>Medicinal Cannabis Applications</li>
               </ul>
             </div>
             <div className="bg-nativa-white p-8 rounded-lg shadow-lg">
@@ -183,11 +183,12 @@ export default function NativaLandingPage() {
               <p className="text-nativa-white text-center">
                 A passionate nurse with roots in complex clinical care, Bec is
                 Nativa&apos;s medical expert having 5 years of experience
-                educating prescribers of cannabis to improve patient outcomes.
-                Bec is an engaging presenter and excels at event planning. An
-                award-winning MSL, and well known industry figure, Bec provides
-                exceptional education for MSLs and clinicians on scientific
-                research, prescribing guidelines and Australian regulations.
+                educating prescribers of medicinal cannabis to improve patient
+                outcomes. Bec is an engaging presenter and excels at event
+                planning. An award-winning MSL, and well known industry figure,
+                Bec provides exceptional education for MSLs and clinicians on
+                scientific research, prescribing guidelines and Australian
+                regulations.
               </p>
             </div>
             <div className="bg-nativa-green p-8 rounded-lg shadow-lg">
@@ -221,18 +222,19 @@ export default function NativaLandingPage() {
             src="/images/leaf-bg.jpg?height=1080&width=1920"
             height={1080}
             width={1920}
-            alt="Cannabis education"
+            alt="Picture of green leaves"
             className="w-full h-full object-cover"
           />
           <div className="absolute inset-0 bg-black opacity-50"></div>
         </div>
         <div className="relative z-10 text-center text-nativa-white p-8">
           <h2 className="text-4xl md:text-5xl font-bold mb-8">
-            Ready to Elevate Your Cannabis Knowledge?
+            Ready to Elevate Your Medicinal cannabis Knowledge?
           </h2>
           <p className="text-xl mb-12">
-            Whether you&apos;re looking to expand your understanding of cannabis
-            or need expert guidance for your business, Nativa is here to help.
+            Whether you&apos;re looking to expand your understanding of
+            medicinal cannabis or need expert guidance for your business, Nativa
+            is here to help.
           </p>
           <Link href="mailto:hello@nativaconsulting.com.au">
             <Button className="text-lg px-8 py-4 bg-nativa-white text-nativa-olive hover:bg-nativa-green hover:text-nativa-white">
@@ -247,17 +249,17 @@ export default function NativaLandingPage() {
         <div className="absolute inset-0 z-0">
           <Image
             src="/images/hero.jpg?height=1080&width=1920"
-            alt="Cannabis education"
+            alt="Medicinal cannabis education"
             className="w-full h-full object-cover"
           />
           <div className="absolute inset-0 bg-black opacity-50"></div>
         </div>
         <div className="max-w-4xl mx-auto text-center">
           <h2 className="text-4xl md:text-5xl font-bold mb-8">
-            Ready to Elevate Your Cannabis Knowledge?
+            Ready to Elevate Your Medicinal cannabis Knowledge?
           </h2>
           <p className="text-xl mb-12">
-            Whether you're looking to expand your understanding of cannabis or
+            Whether you're looking to expand your understanding of medicinal cannabis or
             need expert guidance for your business, Nativa is here to help.
           </p>
           <Button className="text-lg px-8 py-4 bg-nativa-white text-nativa-olive hover:bg-nativa-green hover:text-nativa-white">
@@ -270,8 +272,7 @@ export default function NativaLandingPage() {
       <footer className="bg-slate-900 text-nativa-white py-8">
         <div className="max-w-6xl mx-auto px-4 text-center">
           <p className="mb-4">
-            &copy; 2024 Nativa Cannabis Education & Consulting. All rights
-            reserved.
+            &copy; 2024 Nativa Education & Consulting. All rights reserved.
           </p>
           <p className="text-sm">
             This website is for informational purposes only. Our services are
