@@ -1,5 +1,11 @@
 import { Button } from "@/components/ui/button"
-import { ArrowRight, BookOpen, Users, Lightbulb, Award } from "lucide-react"
+import {
+  ArrowRight,
+  BookOpen,
+  Users,
+  Handshake,
+  CalendarHeart,
+} from "lucide-react"
 import Link from "next/link"
 import Image from "next/image"
 
@@ -55,9 +61,11 @@ export default function NativaLandingPage() {
             Our Mission
           </h2>
           <p className="text-xl text-center mb-12 text-gray-700">
-            At Nativa, we&apos;re dedicated to providing comprehensive education
-            and expert consulting services in the rapidly evolving cannabis
-            industry.
+            Our vision is to educate & elevate cannabis in Australia and across
+            the globe by fostering a culture of transparency, collaboration and
+            excellence across all facets of industry. We choose to work with
+            exceptional partners who truly highlight the patient journey and
+            contribute to furthering clinical achievements.
           </p>
           <div className="grid md:grid-cols-2 gap-12">
             <div className="space-y-4 flex flex-col items-center text-center">
@@ -66,38 +74,53 @@ export default function NativaLandingPage() {
                 Education
               </h3>
               <p className="text-gray-600">
-                We offer in-depth courses and workshops on cannabis science,
-                cultivation, and industry regulations.
+                We deliver agnostic, tailored comprehensive workshops on
+                cannabis science, including practical product guidance, patient
+                management, and industry insights to pharmacies, clinics and MSL
+                groups. We work with CPD providers to deliver accredited
+                education to health care professionals.
+              </p>
+            </div>
+            <div className="space-y-4 flex flex-col items-center text-center">
+              <CalendarHeart size={48} className="text-nativa-olive" />
+              <h3 className="text-2xl font-semibold text-nativa-olive">
+                Events
+              </h3>
+              <p className="text-gray-600">
+                Engage us to coordinate your next sponsored event, conference,
+                or commercial launch for your clinic, pharmacy or new products.
+                We manage all the finer points to deliver an expertly crafted
+                experience aligned with your strategic sales and marketing
+                goals. Innovative and inspirational, our events will power your
+                company&apos;s journey toward success.
               </p>
             </div>
             <div className="space-y-4 flex flex-col items-center text-center">
               <Users size={48} className="text-nativa-olive" />
               <h3 className="text-2xl font-semibold text-nativa-olive">
-                Consulting
+                Clinical Trials
               </h3>
               <p className="text-gray-600">
-                Our expert team provides tailored consulting services for
-                businesses entering or expanding in the cannabis market.
+                We specialise in the design and execution of clinical trials.
+                Work with us to include cannabis research in your business
+                strategy to attain robust observational data and quality
+                clinical outcomes. Engage Nativa and our extensive medical
+                research network to get the validated results you need to
+                accelerate your patient focused educational strategies.
               </p>
             </div>
             <div className="space-y-4 flex flex-col items-center text-center">
-              <Lightbulb size={48} className="text-nativa-olive" />
+              <Handshake size={48} className="text-nativa-olive" />
               <h3 className="text-2xl font-semibold text-nativa-olive">
-                Innovation
+                Product Compliance
               </h3>
               <p className="text-gray-600">
-                We stay at the forefront of cannabis research and technology to
-                provide cutting-edge insights to our clients.
-              </p>
-            </div>
-            <div className="space-y-4 flex flex-col items-center text-center">
-              <Award size={48} className="text-nativa-olive" />
-              <h3 className="text-2xl font-semibold text-nativa-olive">
-                Compliance
-              </h3>
-              <p className="text-gray-600">
-                We ensure our clients understand and adhere to the complex
-                regulatory landscape of the cannabis industry.
+                Our discerning industry expertise in product innovation and
+                compliance is unmatched. We provide insights on unique
+                formulations highlighting quality, safety and efficacy. We
+                prioritise strategies that are focused on consistency and
+                compliance for better patient outcomes in order to drive real
+                results for sustainable growth.
               </p>
             </div>
           </div>
