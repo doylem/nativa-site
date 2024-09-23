@@ -46,7 +46,7 @@ export default function NativaLandingPage() {
             the globe by fostering transparency, collaboration, and excellence.
           </p>
           <Link href="#our-services">
-            <Button className="text-lg px-8 py-4 bg-nativa-white text-nativa-olive hover:bg-nativa-green hover:text-nativa-white">
+            <Button className="text-2xl px-12 py-6 bg-nativa-white text-nativa-olive hover:bg-nativa-green hover:text-nativa-white">
               {/* <Button className="text-lg px-6 py-3"> */}
               Explore Our Services <ArrowRight className="ml-2" />
             </Button>
@@ -134,28 +134,32 @@ export default function NativaLandingPage() {
             Our Services
           </h2>
           <div className="grid md:grid-cols-2 gap-8 mb-16">
-            <div className="bg-nativa-white p-8 rounded-lg shadow-lg">
+            <div className="bg-nativa-white p-8 rounded-lg shadow-lg hover:scale-105 transform transition duration-200">
               <h3 className="text-3xl font-bold mb-4 text-nativa-olive">
-                Educational Programs
+                Educational Services
               </h3>
-              <ul className="list-disc list-inside space-y-2 text-gray-600">
-                <li>Medicinal Cannabis Science and Pharmacology</li>
-                <li>Cultivation Techniques and Best Practices</li>
-                <li>Medicinal cannabis Business Operations</li>
-                <li>Legal and Regulatory Compliance</li>
-                <li>Medicinal Cannabis Applications</li>
+              <ul className="list-disc list-inside space-y-2 text-gray-600 text-lg">
+                <li>Workshops, webinars and conferences</li>
+                <li>Educational event coordination</li>
+                <li>Agnostic product education</li>
+                <li>Formulary development</li>
+                <li>CPD education</li>
+                <li>TGA Guidance</li>
+                <li>Clinical tools</li>
               </ul>
             </div>
-            <div className="bg-nativa-white p-8 rounded-lg shadow-lg">
+            <div className="bg-nativa-white p-8 rounded-lg shadow-lg hover:scale-105 transform transition duration-200">
               <h3 className="text-3xl font-bold mb-4 text-nativa-olive">
-                Consulting Services
+                Industry Services
               </h3>
-              <ul className="list-disc list-inside space-y-2 text-gray-600">
-                <li>Market Entry Strategy</li>
-                <li>Licensing and Permit Assistance</li>
-                <li>Operational Optimization</li>
-                <li>Compliance Audits and Risk Assessment</li>
-                <li>Product Development and Branding</li>
+              <ul className="list-disc list-inside space-y-2 text-gray-600 text-lg">
+                <li>Product formulation</li>
+                <li>Supply chain validation</li>
+                <li>Quality compliance</li>
+                <li>Clinical Trials</li>
+                <li>Sponsorship events</li>
+                <li>Industry launch events</li>
+                <li>Operational enhancements</li>
               </ul>
             </div>
           </div>
@@ -229,15 +233,19 @@ export default function NativaLandingPage() {
         </div>
         <div className="relative z-10 text-center text-nativa-white p-8">
           <h2 className="text-4xl md:text-5xl font-bold mb-8">
-            Ready to Elevate Your Medicinal cannabis Knowledge?
+            Ready to elevate with Nativa?
           </h2>
           <p className="text-xl mb-12">
             Whether you&apos;re looking to expand your understanding of
             medicinal cannabis or need expert guidance for your business, Nativa
             is here to help.
           </p>
-          <Link href="mailto:hello@nativaconsulting.com.au">
-            <Button className="text-lg px-8 py-4 bg-nativa-white text-nativa-olive hover:bg-nativa-green hover:text-nativa-white">
+          <Link
+            href="https://forms.gle/9vALopPJLs3CSjYPA"
+            rel="noopener noreferrer"
+            target="_blank"
+          >
+            <Button className="text-2xl px-12 py-6 bg-nativa-white text-nativa-olive hover:bg-nativa-green hover:text-nativa-white">
               Let&apos;s Get Started
             </Button>
           </Link>
@@ -272,7 +280,8 @@ export default function NativaLandingPage() {
       <footer className="bg-slate-900 text-nativa-white py-8">
         <div className="max-w-6xl mx-auto px-4 text-center">
           <p className="mb-4">
-            &copy; 2024 Nativa Education & Consulting. All rights reserved.
+            &copy; 2024 Nativa Education & Consulting Pty Ltd. All rights
+            reserved.
           </p>
           <p className="text-sm">
             This website is for informational purposes only. Our services are
