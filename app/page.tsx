@@ -43,7 +43,7 @@ export default function NativaLandingPage() {
           </h1>
           <p className="text-xl md:text-2xl mb-8">
             Elevating the medicinal cannabis industry in Australia and across
-            the globe by fostering transparency, collaboration, and excellence.
+            the globe by fostering transparency, collaboration and excellence.
           </p>
           <Link href="#our-services">
             <Button className="text-2xl px-12 py-6 bg-nativa-white text-nativa-olive hover:bg-nativa-green hover:text-nativa-white">
@@ -61,7 +61,7 @@ export default function NativaLandingPage() {
             Our Mission
           </h2>
           <p className="text-xl text-center mb-12 text-gray-700">
-            Our vision is to educate & elevate medicinal cannabis in Australia
+            Our vision is to educate and elevate medicinal cannabis in Australia
             and across the globe by fostering a culture of transparency,
             collaboration and excellence across all facets of industry. We
             choose to work with exceptional partners who truly highlight the
@@ -75,7 +75,7 @@ export default function NativaLandingPage() {
               </h3>
               <p className="text-gray-600">
                 We deliver agnostic, tailored comprehensive workshops on
-                medicinal cannabis science, including practical product
+                endocannabinoid medicine, including scientific research, product
                 guidance, patient management, and industry insights to
                 pharmacies, clinics and MSL groups. We work with CPD providers
                 to deliver accredited education to health care professionals.
@@ -96,20 +96,6 @@ export default function NativaLandingPage() {
               </p>
             </div>
             <div className="space-y-4 flex flex-col items-center text-center">
-              <Users size={48} className="text-nativa-olive" />
-              <h3 className="text-2xl font-semibold text-nativa-olive">
-                Clinical Trials
-              </h3>
-              <p className="text-gray-600">
-                We specialise in the design and execution of clinical trials.
-                Work with us to include medicinal cannabis research in your
-                business strategy to attain robust observational data and
-                quality clinical outcomes. Engage Nativa and our extensive
-                medical research network to get the validated results you need
-                to accelerate your patient focused educational strategies.
-              </p>
-            </div>
-            <div className="space-y-4 flex flex-col items-center text-center">
               <Handshake size={48} className="text-nativa-olive" />
               <h3 className="text-2xl font-semibold text-nativa-olive">
                 Product Compliance
@@ -121,6 +107,20 @@ export default function NativaLandingPage() {
                 prioritise strategies that are focused on consistency and
                 compliance for better patient outcomes in order to drive real
                 results for sustainable growth.
+              </p>
+            </div>
+            <div className="space-y-4 flex flex-col items-center text-center">
+              <Users size={48} className="text-nativa-olive" />
+              <h3 className="text-2xl font-semibold text-nativa-olive">
+                Clinical Trials
+              </h3>
+              <p className="text-gray-600">
+                We specialise in the design and execution of clinical trials.
+                Work with us to include medicinal cannabis research in your
+                business strategy to attain robust observational data and
+                quality clinical outcomes. Engage Nativa and our extensive
+                medical research network to get the validated results you need
+                to accelerate your patient focused educational strategies.
               </p>
             </div>
           </div>
@@ -210,7 +210,7 @@ export default function NativaLandingPage() {
                 A qualified Naturopath with a keen interest in alternative
                 medicine and product formulation, Liz is Nativa&apos;s product
                 expert with extensive experience in the Australian medicinal
-                cannabis industry - including pharmacy education & operations,
+                cannabis industry - including pharmacy education and operations,
                 supply chain management and product compliance. Liz is a fierce
                 medicinal cannabis advocate who enjoys keeping up to date with
                 research and innovative healthcare solutions.

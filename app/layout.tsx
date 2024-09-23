@@ -16,7 +16,7 @@ const geistMono = localFont({
 export const metadata: Metadata = {
   title: "Nativa",
   description:
-    "Elevating the cannabis industry in Australia by fostering transparency, collaboration, and excellence.",
+    "Elevating the medicinal cannabis industry in Australia and across the globe by fostering transparency, collaboration and excellence.",
 }
 
 export default function RootLayout({
