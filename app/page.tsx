@@ -16,7 +16,7 @@ export default function NativaLandingPage() {
       <section className="relative h-screen flex items-center justify-center overflow-hidden">
         <div className="absolute inset-0 z-0">
           <Image
-            src="/images/hero.jpg"
+            src="/images/hero2.jpg"
             height={1080}
             width={1920}
             alt="Nativa homepage banner"
