@@ -10,6 +10,8 @@ import Link from "next/link"
 import Image from "next/image"
 
 export default function NativaLandingPage() {
+  const currentYear = new Date().getFullYear()
+
   return (
     <div className="min-h-screen bg-nativa-green">
       {/* Hero Section */}
@@ -223,7 +225,7 @@ export default function NativaLandingPage() {
       <section className="relative h-screen flex items-center justify-center overflow-hidden">
         <div className="absolute inset-0 z-0">
           <Image
-            src="/images/leaf-bg.jpg?height=1080&width=1920"
+            src="/images/leaf-bg-bottom.jpg?height=1080&width=1920"
             height={1080}
             width={1920}
             alt="Picture of green leaves"
@@ -280,8 +282,8 @@ export default function NativaLandingPage() {
       <footer className="bg-slate-900 text-nativa-white py-8">
         <div className="max-w-6xl mx-auto px-4 text-center">
           <p className="mb-4">
-            &copy; 2024 Nativa Education & Consulting Pty Ltd. All rights
-            reserved.
+            &copy; {currentYear} Nativa Education & Consulting Pty Ltd. All
+            rights reserved.
           </p>
           <p className="text-sm">
             This website is for informational purposes only. Our services are
