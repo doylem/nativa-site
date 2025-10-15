@@ -28,7 +28,7 @@ export default function NativaLandingPage() {
             />
           </div>
           <h1 className="text-4xl md:text-5xl font-playfair font-normal mb-6 tracking-wide">
-            From Stigma to Standard Practice
+            From Stigma To<br/><em>Standard Practice</em>
           </h1>
           <p className="text-base md:text-lg mb-8 max-w-2xl mx-auto leading-relaxed">
             Our vision is to educate & elevate cannabis in Australia and across the globe by fostering a culture of transparency, collaboration, & excellence across all facets of industry.
