@@ -31,7 +31,7 @@ export default function NativaLandingPage() {
             From Stigma to Standard Practice
           </h1>
           <p className="text-base md:text-lg mb-8 max-w-2xl mx-auto leading-relaxed">
-            Elevating the medicinal cannabis industry in Australia and across the globe by fostering transparency, collaboration and excellence.
+            Our vision is to educate & elevate cannabis in Australia and across the globe by fostering a culture of transparency, collaboration, & excellence across all facets of industry.
           </p>
           <Link href="#elevate">
             <Button className="px-8 py-3 bg-white text-nativa-olive hover:bg-gray-100">
