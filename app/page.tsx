@@ -103,7 +103,7 @@ export default function NativaLandingPage() {
       <section className="py-20 px-4 bg-purple-50">
         <div className="max-w-6xl mx-auto">
           <h2 className="text-3xl md:text-4xl font-playfair font-normal mb-16 text-center text-gray-900">
-            How We Elevate Your Business
+            Harness our distinctive expertise and forward-thinking approach to education to gain a competitive advantage.
           </h2>
           <div className="grid md:grid-cols-2 gap-12 items-center">
             <div className="relative">
