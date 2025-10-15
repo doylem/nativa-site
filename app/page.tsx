@@ -34,7 +34,7 @@ export default function NativaLandingPage() {
             Our vision is to educate and elevate cannabis in Australia and across the globe by fostering a culture of transparency, collaboration, and excellence across all facets of industry.
           </p>
           <Link href="#elevate">
-            <Button className="px-8 py-3 bg-white text-nativa-olive hover:bg-gray-100">
+            <Button className="px-16 py-3 bg-white text-nativa-olive hover:bg-gray-100">
               Learn More
             </Button>
           </Link>
