@@ -111,7 +111,7 @@ export default function NativaLandingPage() {
           <div className="grid md:grid-cols-2 gap-12 items-start">
             <div className="relative">
               <Image
-                src="/images/image.png"
+                src="/images/Nativa Landing page.png"
                 width={600}
                 height={800}
                 alt="Healthcare professional"
