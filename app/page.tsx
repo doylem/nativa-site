@@ -103,23 +103,24 @@ export default function NativaLandingPage() {
       </section>
 
       {/* How We Elevate Section */}
-      <section className="py-20 px-4 bg-gray-100">
-        <div className="max-w-6xl mx-auto">
-            <h2 className="text-3xl md:text-4xl font-playfair font-normal mb-4 text-center text-gray-900">
+      <section className="relative py-20 px-4 overflow-hidden">
+        <div className="absolute inset-0 z-0">
+          <Image
+            src="/images/Nativa Landing page.png"
+            fill
+            alt="Background"
+            className="object-cover"
+            priority
+          />
+        </div>
+        <div className="relative z-10 max-w-6xl mx-auto">
+          <h2 className="text-3xl md:text-4xl font-normal mb-16 text-gray-900 max-w-4xl">
             Harness our distinctive expertise and forward-thinking approach to education to gain a competitive advantage.
           </h2>
           <div className="grid md:grid-cols-2 gap-12 items-start">
-            <div className="relative">
-              <Image
-                src="/images/Nativa Landing page.png"
-                width={600}
-                height={800}
-                alt="Healthcare professional"
-                className="rounded-lg w-full"
-              />
-            </div>
+            <div className="hidden md:block"></div>
             <div className="space-y-8">
-              <div className="group cursor-pointer bg-white hover:bg-gray-50 p-6 rounded-lg transition-all">
+              <div className="group cursor-pointer bg-white/90 backdrop-blur-sm hover:bg-white/95 p-6 rounded-lg transition-all shadow-md">
                 <div className="flex gap-4 items-start">
                   <div className="flex-shrink-0">
                     <div className="w-16 h-16 rounded-full bg-white group-hover:bg-nativa-purple flex items-center justify-center text-nativa-purple group-hover:text-white font-semibold text-lg transition-colors border-2 border-nativa-purple">
@@ -139,7 +140,7 @@ export default function NativaLandingPage() {
                   </div>
                 </div>
               </div>
-              <div className="group cursor-pointer bg-white hover:bg-gray-50 p-6 rounded-lg transition-all">
+              <div className="group cursor-pointer bg-white/90 backdrop-blur-sm hover:bg-white/95 p-6 rounded-lg transition-all shadow-md">
                 <div className="flex gap-4 items-start">
                   <div className="flex-shrink-0">
                     <div className="w-16 h-16 rounded-full bg-white group-hover:bg-nativa-purple flex items-center justify-center text-nativa-purple group-hover:text-white font-semibold text-lg transition-colors border-2 border-nativa-purple">
@@ -159,7 +160,7 @@ export default function NativaLandingPage() {
                   </div>
                 </div>
               </div>
-              <div className="group cursor-pointer bg-white hover:bg-gray-50 p-6 rounded-lg transition-all">
+              <div className="group cursor-pointer bg-white/90 backdrop-blur-sm hover:bg-white/95 p-6 rounded-lg transition-all shadow-md">
                 <div className="flex gap-4 items-start">
                   <div className="flex-shrink-0">
                     <div className="w-16 h-16 rounded-full bg-white group-hover:bg-nativa-purple flex items-center justify-center text-nativa-purple group-hover:text-white font-semibold text-lg transition-colors border-2 border-nativa-purple">
