@@ -17,7 +17,7 @@ export default function NativaLandingPage() {
       {/* Hero Section */}
       <section className="min-h-screen flex items-center justify-center bg-nativa-olive">
         <div className="text-center text-white p-8 mb-16 max-w-4xl mx-auto">
-          <div className="flex justify-center mb-8">
+          <div className="flex justify-center mb-16">
             <Image
               src="/images/nativa-site-logo.png"
               width={1659}
