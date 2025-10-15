@@ -60,6 +60,7 @@ const config: Config = {
         "nativa-pink": "#d6c4d7",
         "nativa-orange": "#faedd8",
         "nativa-white": "#faf6f1",
+        "nativa-purple": "#945498",
 
         green: {
           light: "hsl(var(--n-green-light))",
