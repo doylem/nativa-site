@@ -191,13 +191,14 @@ export default function NativaLandingPage() {
             <div className="grid md:grid-cols-2 gap-12 items-center">
               <div className="space-y-4">
                 <div className="inline-block px-4 py-1 bg-gray-100 rounded-full text-sm text-gray-600">
-                  Founder & Managing Director
+                  CO-FOUNDER & DIRECTOR
                 </div>
                 <h3 className="text-2xl font-semibold text-gray-900">
-                  Bec Doyle
+                  Rebecca Doyle
                 </h3>
                 <p className="text-gray-600 leading-relaxed">
-                  A nurse with extensive experience in complex clinical care, Bec brings over 5 years of specialized expertise in medicinal cannabis education. As an award-winning Medical Science Liaison and respected industry figure, she delivers exceptional training for healthcare professionals on scientific research, prescribing guidelines, and regulatory compliance. Her engaging presentation style and event planning prowess make her a sought-after speaker and educator.
+                  A passionate nurse with roots in complex clinical care, Bec is Nativa’s medical sales expert having 5 years of experience educating prescribers of cannabis and improving patient outcomes. Bec is an engaging presenter and excels at event planning. An award-winning MSL, and well known industry figure, Bec provides exceptional education for MSLs and clinicians on scientific research, prescribing guidelines and Australian regulations.
+                
                 </p>
               </div>
               <div className="relative">
