@@ -114,7 +114,7 @@ export default function NativaLandingPage() {
           />
         </div>
         <div className="relative z-10 max-w-6xl mx-auto">
-          <h2 className="text-3xl md:text-4xl font-playfair font-normal mb-16 text-white">
+          <h2 className="text-3xl md:text-4xl font-playfair font-normal mb-16 text-white text-center">
             Harness our distinctive expertise and forward-thinking approach to education to gain a competitive advantage.
           </h2>
           <div className="max-w-3xl mx-auto">
