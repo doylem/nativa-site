@@ -24,7 +24,7 @@ export default function NativaLandingPage() {
               height={568}
               alt="Nativa logo"
               className="object-center"
-              style={{ width: "300px", minWidth: "200px" }}
+              style={{ width: "600px", minWidth: "400px" }}
             />
           </div>
           <h1 className="text-4xl md:text-5xl font-playfair font-normal mb-6 tracking-wide">
