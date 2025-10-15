@@ -52,7 +52,7 @@ export default function NativaLandingPage() {
           </p>
           <div className="grid md:grid-cols-2 gap-8">
             <div className="bg-white p-8 rounded-lg border border-gray-200">
-              <div className="mb-6">
+              <div className="mb-6 flex justify-center">
                 <BookOpen className="w-12 h-12 text-nativa-olive" strokeWidth={1.5} />
               </div>
               <h3 className="text-xl font-semibold mb-4 text-gray-900">
@@ -63,7 +63,7 @@ export default function NativaLandingPage() {
               </p>
             </div>
             <div className="bg-white p-8 rounded-lg border border-gray-200">
-              <div className="mb-6">
+              <div className="mb-6 flex justify-center">
                 <Calendar className="w-12 h-12 text-nativa-olive" strokeWidth={1.5} />
               </div>
               <h3 className="text-xl font-semibold mb-4 text-gray-900">
@@ -74,7 +74,7 @@ export default function NativaLandingPage() {
               </p>
             </div>
             <div className="bg-white p-8 rounded-lg border border-gray-200">
-              <div className="mb-6">
+              <div className="mb-6 flex justify-center">
                 <FlaskConical className="w-12 h-12 text-nativa-olive" strokeWidth={1.5} />
               </div>
               <h3 className="text-xl font-semibold mb-4 text-gray-900">
@@ -85,7 +85,7 @@ export default function NativaLandingPage() {
               </p>
             </div>
             <div className="bg-white p-8 rounded-lg border border-gray-200">
-              <div className="mb-6">
+              <div className="mb-6 flex justify-center">
                 <Microscope className="w-12 h-12 text-nativa-olive" strokeWidth={1.5} />
               </div>
               <h3 className="text-xl font-semibold mb-4 text-gray-900">
