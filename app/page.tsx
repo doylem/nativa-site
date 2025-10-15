@@ -103,65 +103,77 @@ export default function NativaLandingPage() {
       </section>
 
       {/* How We Elevate Section */}
-      <section className="py-20 px-4 bg-purple-50">
+      <section className="py-20 px-4 bg-gray-100">
         <div className="max-w-6xl mx-auto">
-          <h2 className="text-3xl md:text-4xl font-playfair font-normal mb-16 text-center text-gray-900">
+          <h2 className="text-3xl md:text-4xl font-normal mb-16 text-gray-900 max-w-4xl">
             Harness our distinctive expertise and forward-thinking approach to education to gain a competitive advantage.
           </h2>
-          <div className="grid md:grid-cols-2 gap-12 items-center">
+          <div className="grid md:grid-cols-2 gap-12 items-start">
             <div className="relative">
               <Image
-                src="/images/hero2.jpg"
+                src="/images/image.png"
                 width={600}
                 height={800}
-                alt="Business consultation"
-                className="rounded-lg shadow-lg w-full"
+                alt="Healthcare professional"
+                className="rounded-lg w-full"
               />
             </div>
-            <div className="space-y-12">
-              <div className="flex gap-6">
-                <div className="flex-shrink-0">
-                  <div className="w-12 h-12 rounded-full bg-purple-200 flex items-center justify-center text-purple-700 font-semibold">
-                    01
+            <div className="space-y-8">
+              <div className="group cursor-pointer bg-white hover:bg-gray-50 p-6 rounded-lg transition-all">
+                <div className="flex gap-4 items-start">
+                  <div className="flex-shrink-0">
+                    <div className="w-16 h-16 rounded-full bg-white group-hover:bg-nativa-purple flex items-center justify-center text-nativa-purple group-hover:text-white font-semibold text-lg transition-colors border-2 border-nativa-purple">
+                      01
+                    </div>
                   </div>
-                </div>
-                <div>
-                  <h3 className="text-xl font-semibold mb-2 text-gray-900">
-                    Discovery & Assessment
-                  </h3>
-                  <p className="text-gray-600">
-                    We begin by understanding your unique challenges and goals. Our team conducts thorough assessments to identify opportunities for growth and improvement in your medicinal cannabis operations.
-                  </p>
+                  <div>
+                    <h3 className="text-xl font-semibold mb-3 text-gray-900">
+                      Prescribers
+                    </h3>
+                    <p className="text-gray-600 mb-2 font-semibold text-sm">
+                      Up-To-Date, relevant, evidence- based & practical CPD accredited courses.
+                    </p>
+                    <p className="text-gray-600 text-sm leading-relaxed">
+                      Our tailored programs are expertly delivered to simplify complex concepts and provide practical, evidence-based clinical insights; equipping healthcare professionals with the compliant knowledge to deliver safe, and effective patient-focused care.
+                    </p>
+                  </div>
                 </div>
               </div>
-              <div className="flex gap-6">
-                <div className="flex-shrink-0">
-                  <div className="w-12 h-12 rounded-full bg-purple-200 flex items-center justify-center text-purple-700 font-semibold">
-                    02
+              <div className="group cursor-pointer bg-white hover:bg-gray-50 p-6 rounded-lg transition-all">
+                <div className="flex gap-4 items-start">
+                  <div className="flex-shrink-0">
+                    <div className="w-16 h-16 rounded-full bg-white group-hover:bg-nativa-purple flex items-center justify-center text-nativa-purple group-hover:text-white font-semibold text-lg transition-colors border-2 border-nativa-purple">
+                      02
+                    </div>
                   </div>
-                </div>
-                <div>
-                  <h3 className="text-xl font-semibold mb-2 text-gray-900">
-                    Strategy & Solution Development
-                  </h3>
-                  <p className="text-gray-600">
-                    Our experts develop customised strategies tailored to your specific needs. We create actionable plans that align with industry best practices and regulatory requirements.
-                  </p>
+                  <div>
+                    <h3 className="text-xl font-semibold mb-3 text-gray-900">
+                      Clinics
+                    </h3>
+                    <p className="text-gray-600 mb-2 font-semibold text-sm">
+                      Improve efficiencies, better your bottom line and maximise patient retention with our compliant operational strategies.
+                    </p>
+                    <p className="text-gray-600 text-sm leading-relaxed">
+                      Whether you&apos;re entering the medicinal cannabis space or seeking to future-proof your organisation, we deliver independent, pragmatic guidance that accelerates your impact and ensures patient-first, regulator-ready operations.
+                    </p>
+                  </div>
                 </div>
               </div>
-              <div className="flex gap-6">
-                <div className="flex-shrink-0">
-                  <div className="w-12 h-12 rounded-full bg-purple-200 flex items-center justify-center text-purple-700 font-semibold">
-                    03
+              <div className="group cursor-pointer bg-white hover:bg-gray-50 p-6 rounded-lg transition-all">
+                <div className="flex gap-4 items-start">
+                  <div className="flex-shrink-0">
+                    <div className="w-16 h-16 rounded-full bg-white group-hover:bg-nativa-purple flex items-center justify-center text-nativa-purple group-hover:text-white font-semibold text-lg transition-colors border-2 border-nativa-purple">
+                      03
+                    </div>
                   </div>
-                </div>
-                <div>
-                  <h3 className="text-xl font-semibold mb-2 text-gray-900">
-                    Implementation & Support
-                  </h3>
-                  <p className="text-gray-600">
-                    We work alongside your team to implement solutions effectively. Our ongoing support ensures sustainable growth and continuous improvement in your medicinal cannabis business.
-                  </p>
+                  <div>
+                    <h3 className="text-xl font-semibold mb-3 text-gray-900">
+                      Pharmacists
+                    </h3>
+                    <p className="text-gray-600 text-sm leading-relaxed">
+                      ECS Science; Pharmacy Regulations; New Dose Forms; Patient Management Resources; Pharmacy Compliance; Formulary Guidance & Device Education
+                    </p>
+                  </div>
                 </div>
               </div>
             </div>
