@@ -114,7 +114,7 @@ export default function NativaLandingPage() {
           />
         </div>
         <div className="relative z-10 max-w-6xl mx-auto">
-          <h2 className="text-3xl md:text-4xl font-normal mb-16 text-gray-900 max-w-4xl">
+                    <h2 className="text-3xl md:text-4xl font-playfair font-normal mb-4 text-center text-gray-900 text-white">
             Harness our distinctive expertise and forward-thinking approach to education to gain a competitive advantage.
           </h2>
           <div className="grid md:grid-cols-2 gap-12 items-start">
