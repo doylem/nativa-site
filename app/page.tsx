@@ -56,10 +56,13 @@ export default function NativaLandingPage() {
                 <BookOpen className="w-12 h-12 text-nativa-purple" strokeWidth={1.5} />
               </div>
               <h3 className="text-xl text-center font-semibold mb-4 text-gray-900">
-                Education & Training
+                Education
               </h3>
-              <p className="text-gray-600">
-                Engage a tailored education series covering scientific research, patient management, and industry insights through agnostic product education. We work with CPD providers to deliver accredited training to healthcare professionals.
+              <p className="text-center text-gray-600 mb-4 font-semibold">
+                Tailored to suit your needs.
+              </p>
+              <p className="text-center text-gray-600">
+                We deliver education to empower Healthcare Practitioners & industry professionals with confidence in Australia&apos;s ever-changing regulatory environment.
               </p>
             </div>
             <div className="bg-white p-8 rounded-lg border border-gray-200">
@@ -67,10 +70,10 @@ export default function NativaLandingPage() {
                 <Calendar className="w-12 h-12 text-nativa-purple" strokeWidth={1.5} />
               </div>
               <h3 className="text-xl text-center font-semibold mb-4 text-gray-900">
-                Events & Conferences
+                Consulting
               </h3>
-              <p className="text-gray-600">
-                Engage a well-connected industry expert. Leverage our connections to plan and execute workshops, webinars, and conferences that showcase your brand&apos;s expertise and leadership in the medicinal cannabis space.
+              <p className="text-center text-gray-600">
+                Let us set you up for success with expert guidance on every step of your journey. We assess and refine your operational processes to clarify your positioning and potential, while delivering the strategic advice, operational expertise, and regulatory confidence to strengthen your influence.
               </p>
             </div>
             <div className="bg-white p-8 rounded-lg border border-gray-200">
@@ -78,10 +81,10 @@ export default function NativaLandingPage() {
                 <FlaskConical className="w-12 h-12 text-nativa-purple" strokeWidth={1.5} />
               </div>
               <h3 className="text-xl text-center font-semibold mb-4 text-gray-900">
-                Product Development
+                Events
               </h3>
-              <p className="text-gray-600">
-                Engage a team who can give you both a clinical and pharmacy perspective on your new product. Therapies centred around quality, safety and efficacy. Focused on consistency and compliance for better patient outcomes.
+              <p className="text-center text-gray-600">
+                Let Nativa lead in the delivery a professional event designed to provide attendees with high-quality learning, networking, and engagement opportunities in a memorable, time-efficient format.
               </p>
             </div>
             <div className="bg-white p-8 rounded-lg border border-gray-200">
@@ -89,10 +92,10 @@ export default function NativaLandingPage() {
                 <Microscope className="w-12 h-12 text-nativa-purple" strokeWidth={1.5} />
               </div>
               <h3 className="text-xl text-center font-semibold mb-4 text-gray-900">
-                Clinical Research
+                Compliance
               </h3>
-              <p className="text-gray-600">
-                Engage a team who can assist with the clinical trial requirements from our medical research network for validated results. Our data and research will contribute to enhanced patient focused educational strategies.
+              <p className="text-center text-gray-600">
+                Effective consulting starts with genuine sector knowledge and ends with practical, confidence-boosting solutions. Nativa&apos;s consulting services are completely agnostic—rooted in science, compliance, and operational best practice, not in product deals or backdoor commissions.
               </p>
             </div>
           </div>
