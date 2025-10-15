@@ -15,17 +15,8 @@ export default function NativaLandingPage() {
   return (
     <div className="min-h-screen bg-nativa-green">
       {/* Hero Section */}
-      <section className="relative min-h-screen flex items-center justify-center overflow-hidden bg-nativa-olive">
-        <div className="absolute inset-0 z-0">
-          <Image
-            src="/images/hero2.jpg"
-            height={1080}
-            width={1920}
-            alt="Nativa homepage banner"
-            className="w-full h-full object-cover opacity-40"
-          />
-        </div>
-        <div className="relative z-10 text-center text-white p-8 max-w-4xl mx-auto">
+      <section className="min-h-screen flex items-center justify-center bg-nativa-olive">
+        <div className="text-center text-white p-8 max-w-4xl mx-auto">
           <div className="flex justify-center mb-8">
             <Image
               src="/images/nativa-site-logo.png"
