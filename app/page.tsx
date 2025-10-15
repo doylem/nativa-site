@@ -19,7 +19,7 @@ export default function NativaLandingPage() {
         <div className="text-center text-white p-8 mb-16 max-w-4xl mx-auto">
           <div className="flex justify-center mb-16">
             <Image
-              src="/images/nativa-site-logo.png"
+              src="/images/nativa-site-logo copy.png"
               width={1659}
               height={568}
               alt="Nativa logo"
