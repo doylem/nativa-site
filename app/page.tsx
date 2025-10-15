@@ -55,7 +55,7 @@ export default function NativaLandingPage() {
               <div className="mb-6 flex justify-center">
                 <BookOpen className="w-12 h-12 text-nativa-purple" strokeWidth={1.5} />
               </div>
-              <h3 className="text-xl font-semibold mb-4 text-gray-900 text-align-center">
+              <h3 className="text-xl text-center font-semibold mb-4 text-gray-900">
                 Education & Training
               </h3>
               <p className="text-gray-600">
