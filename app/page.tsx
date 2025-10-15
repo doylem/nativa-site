@@ -16,7 +16,7 @@ export default function NativaLandingPage() {
     <div className="min-h-screen bg-nativa-green">
       {/* Hero Section */}
       <section className="min-h-screen flex items-center justify-center bg-nativa-olive">
-        <div className="text-center text-white p-8 max-w-4xl mx-auto">
+        <div className="text-center text-white p-8 mb-8 max-w-4xl mx-auto">
           <div className="flex justify-center mb-8">
             <Image
               src="/images/nativa-site-logo.png"
@@ -27,9 +27,6 @@ export default function NativaLandingPage() {
               style={{ width: "500px", minWidth: "350px" }}
             />
           </div>
-          <p className="text-base md:text-xl mb-8 max-w-2xl mx-auto leading-relaxed">
-          &nbsp;
-          </p>
           <h1 className="text-5xl md:text-5xl font-playfair font-normal mb-6 tracking-wide">
             From Stigma To<br/><em>Standard Practice</em>
           </h1>
