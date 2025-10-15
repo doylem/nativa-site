@@ -27,7 +27,7 @@ export default function NativaLandingPage() {
               style={{ width: "500px", minWidth: "350px" }}
             />
           </div>
-          <h1 className="text-4xl md:text-5xl font-playfair font-normal mb-6 tracking-wide">
+          <h1 className="text-5xl md:text-5xl font-playfair font-normal mb-6 tracking-wide">
             From Stigma To<br/><em>Standard Practice</em>
           </h1>
           <p className="text-base md:text-lg mb-8 max-w-2xl mx-auto leading-relaxed">
