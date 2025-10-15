@@ -5,7 +5,7 @@ import {
   AccordionItem,
   AccordionTrigger,
 } from "@/components/ui/accordion"
-import { ArrowDown } from "lucide-react"
+import { ArrowDown, BookOpen, Calendar, FlaskConical, Microscope } from "lucide-react"
 import Link from "next/link"
 import Image from "next/image"
 
@@ -52,7 +52,9 @@ export default function NativaLandingPage() {
           </p>
           <div className="grid md:grid-cols-2 gap-8">
             <div className="bg-white p-8 rounded-lg border border-gray-200">
-              <div className="text-sm text-gray-500 mb-4">Service 01</div>
+              <div className="mb-6">
+                <BookOpen className="w-12 h-12 text-nativa-olive" strokeWidth={1.5} />
+              </div>
               <h3 className="text-xl font-semibold mb-4 text-gray-900">
                 Education & Training
               </h3>
@@ -61,7 +63,9 @@ export default function NativaLandingPage() {
               </p>
             </div>
             <div className="bg-white p-8 rounded-lg border border-gray-200">
-              <div className="text-sm text-gray-500 mb-4">Service 02</div>
+              <div className="mb-6">
+                <Calendar className="w-12 h-12 text-nativa-olive" strokeWidth={1.5} />
+              </div>
               <h3 className="text-xl font-semibold mb-4 text-gray-900">
                 Events & Conferences
               </h3>
@@ -70,7 +74,9 @@ export default function NativaLandingPage() {
               </p>
             </div>
             <div className="bg-white p-8 rounded-lg border border-gray-200">
-              <div className="text-sm text-gray-500 mb-4">Service 03</div>
+              <div className="mb-6">
+                <FlaskConical className="w-12 h-12 text-nativa-olive" strokeWidth={1.5} />
+              </div>
               <h3 className="text-xl font-semibold mb-4 text-gray-900">
                 Product Development
               </h3>
@@ -79,7 +85,9 @@ export default function NativaLandingPage() {
               </p>
             </div>
             <div className="bg-white p-8 rounded-lg border border-gray-200">
-              <div className="text-sm text-gray-500 mb-4">Service 04</div>
+              <div className="mb-6">
+                <Microscope className="w-12 h-12 text-nativa-olive" strokeWidth={1.5} />
+              </div>
               <h3 className="text-xl font-semibold mb-4 text-gray-900">
                 Clinical Research
               </h3>
