@@ -256,44 +256,6 @@ Liz is passionate about advancing cannabinoid research and keeps a keen eye on e
         </div>
       </section>
 
-      {/* Stats Section */}
-      <section className="py-16 px-4 bg-nativa-olive text-white">
-        <div className="max-w-6xl mx-auto">
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
-            <div>
-              <div className="text-4xl md:text-5xl font-light mb-2">30+</div>
-              <div className="text-sm text-gray-300">Years of combined healthcare experience</div>
-            </div>
-            <div>
-              <div className="text-4xl md:text-5xl font-light mb-2">10+</div>
-              <div className="text-sm text-gray-300">Industry Partners</div>
-            </div>
-            <div>
-              <div className="text-4xl md:text-5xl font-light mb-2">100+</div>
-              <div className="text-sm text-gray-300">Educational Sessions Delivered</div>
-            </div>
-            <div>
-              <div className="text-4xl md:text-5xl font-light mb-2">50+</div>
-              <div className="text-sm text-gray-300">Clinical Professionals Trained</div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Admired By Section */}
-      <section className="py-20 px-4 bg-gray-50">
-        <div className="max-w-4xl mx-auto text-center">
-          <h2 className="text-3xl md:text-4xl font-playfair font-normal mb-4 text-gray-900">
-            Admired by companies
-          </h2>
-          <p className="text-3xl md:text-4xl font-playfair font-normal text-gray-900">
-            and professionals who truly value their{" "}
-            <span className="text-purple-600">people</span> &amp;{" "}
-            <span className="text-purple-600">clients</span>.
-          </p>
-        </div>
-      </section>
-
       {/* Testimonials Section */}
       <section className="py-20 px-4 bg-nativa-olive text-white">
         <div className="max-w-6xl mx-auto">
@@ -342,6 +304,46 @@ Liz is passionate about advancing cannabinoid research and keeps a keen eye on e
         </div>
       </section>
 
+      {/* Admired By Section */}
+      <section className="py-20 px-4 bg-gray-50">
+        <div className="max-w-4xl mx-auto text-center">
+          <h2 className="text-3xl md:text-4xl font-playfair font-normal mb-4 text-gray-900">
+            Admired by companies
+          </h2>
+          <p className="text-3xl md:text-4xl font-playfair font-normal text-gray-900">
+            and professionals who truly value their{" "}
+            <span className="text-purple-600">people</span> &amp;{" "}
+            <span className="text-purple-600">clients</span>.
+          </p>
+        </div>
+      </section>
+
+      
+      {/* Stats Section */}
+      <section className="py-16 px-4 bg-nativa-olive text-white">
+        <div className="max-w-6xl mx-auto">
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
+            <div>
+              <div className="text-4xl md:text-5xl font-light mb-2">30+</div>
+              <div className="text-sm text-gray-300">Years of combined healthcare experience</div>
+            </div>
+            <div>
+              <div className="text-4xl md:text-5xl font-light mb-2">10+</div>
+              <div className="text-sm text-gray-300">Industry Partners</div>
+            </div>
+            <div>
+              <div className="text-4xl md:text-5xl font-light mb-2">100+</div>
+              <div className="text-sm text-gray-300">Educational Sessions Delivered</div>
+            </div>
+            <div>
+              <div className="text-4xl md:text-5xl font-light mb-2">50+</div>
+              <div className="text-sm text-gray-300">Clinical Professionals Trained</div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      
       {/* CTA Section */}
       <section className="relative py-32 px-4 overflow-hidden bg-nativa-olive">
         <div className="absolute inset-0 z-0">
