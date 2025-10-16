@@ -183,7 +183,7 @@ export default function NativaLandingPage() {
           </h2>
           <div className="space-y-16">
             <div className="grid md:grid-cols-2 gap-12 items-center">
-              <div className="space-y-4">
+              <div className="space-y-4 order-1">
                 <div className="inline-block px-4 py-1 bg-gray-100 rounded-full text-sm text-gray-600">
                   CO-FOUNDER & DIRECTOR
                 </div>
@@ -191,11 +191,11 @@ export default function NativaLandingPage() {
                   Rebecca Doyle
                 </h3>
                 <p className="text-gray-600 leading-relaxed">
-                  A passionate nurse with roots in complex clinical care, Bec is Nativa’s medical sales expert having 5 years of experience educating prescribers of cannabis and improving patient outcomes. Bec is an engaging presenter and excels at event planning. An award-winning MSL, and well known industry figure, Bec provides exceptional education for MSLs and clinicians on scientific research, prescribing guidelines and Australian regulations.
-                
+                  A passionate nurse with roots in complex clinical care, Bec is Nativa&apos;s medical sales expert having 5 years of experience educating prescribers of cannabis and improving patient outcomes. Bec is an engaging presenter and excels at event planning. An award-winning MSL, and well known industry figure, Bec provides exceptional education for MSLs and clinicians on scientific research, prescribing guidelines and Australian regulations.
+
                 </p>
               </div>
-              <div className="relative">
+              <div className="relative order-2">
                 <Image
                   src="/images/director-bec.jpg"
                   alt="Bec Doyle"
@@ -207,7 +207,19 @@ export default function NativaLandingPage() {
             </div>
 
             <div className="grid md:grid-cols-2 gap-12 items-center">
-              <div className="relative md:order-1">
+              <div className="space-y-4 order-1 md:order-2">
+                <div className="inline-block px-4 py-1 bg-gray-100 rounded-full text-sm text-gray-600">
+                                    CO-FOUNDER & DIRECTOR
+                </div>
+                <h3 className="text-2xl font-semibold text-gray-900">
+                  Liz Warburton
+                </h3>
+                <p className="text-gray-600 leading-relaxed">
+                  A qualified Naturopath with a sharp focus on alternative medicine and innovative product formulation, Liz Warburton stands out as Nativa&apos;s product and compliance expert. As operations manager of one of Australia&apos;s busiest pharmacies, Liz oversaw an impressive 700 scripts daily, demonstrating her skill not only in high-volume workflow management but also in scaling operations to drive consistent patient retention and satisfaction. After her pharmacy leadership, Liz deepened her expertise in supply chain operations and market compliance, mastering the complexities of medicinal cannabis distribution and regulatory requirements across the Australian landscape.
+Liz is passionate about advancing cannabinoid research and keeps a keen eye on emerging healthcare solutions. Her fierce advocacy, paired with her practical know-how, ensures that Nativa delivers education, consultation, and industry support with unmatched integrity and operational rigour.
+                </p>
+              </div>
+              <div className="relative order-2 md:order-1">
                 <Image
                   src="/images/director-liz.jpg"
                   width={500}
@@ -216,22 +228,10 @@ export default function NativaLandingPage() {
                   className="rounded-lg shadow-lg w-full"
                 />
               </div>
-              <div className="space-y-4 md:order-2">
-                <div className="inline-block px-4 py-1 bg-gray-100 rounded-full text-sm text-gray-600">
-                                    CO-FOUNDER & DIRECTOR
-                </div>
-                <h3 className="text-2xl font-semibold text-gray-900">
-                  Liz Warburton
-                </h3>
-                <p className="text-gray-600 leading-relaxed">
-                  A qualified Naturopath with a sharp focus on alternative medicine and innovative product formulation, Liz Warburton stands out as Nativa’s product and compliance expert. As operations manager of one of Australia’s busiest pharmacies, Liz oversaw an impressive 700 scripts daily, demonstrating her skill not only in high-volume workflow management but also in scaling operations to drive consistent patient retention and satisfaction. After her pharmacy leadership, Liz deepened her expertise in supply chain operations and market compliance, mastering the complexities of medicinal cannabis distribution and regulatory requirements across the Australian landscape.
-Liz is passionate about advancing cannabinoid research and keeps a keen eye on emerging healthcare solutions. Her fierce advocacy, paired with her practical know-how, ensures that Nativa delivers education, consultation, and industry support with unmatched integrity and operational rigour.
-                </p>
-              </div>
             </div>
 
             <div className="grid md:grid-cols-2 gap-12 items-center">
-              <div className="space-y-4">
+              <div className="space-y-4 order-1">
                 <div className="inline-block px-4 py-1 bg-gray-100 rounded-full text-sm text-gray-600">
                   CONSULTANT
                 </div>
@@ -242,7 +242,7 @@ Liz is passionate about advancing cannabinoid research and keeps a keen eye on e
                   A registered nurse and integrative clinician with over seven years of clinical practice in the medicinal cannabis space, Cam offers deep expertise in patient care and operations. He has led the compliant development and management of multiple healthcare clinics, ensuring regulatory standards and excellence at every stage. Cam is also a skilled communicator, podcast host, writer, and the founder of The Third Path—an initiative advancing integrative and regenerative approaches in healthcare.
                 </p>
               </div>
-              <div className="relative">
+              <div className="relative order-2">
                 <Image
                   src="/images/consultant-cam.jpg"
                   alt="Cameron Rosin"
