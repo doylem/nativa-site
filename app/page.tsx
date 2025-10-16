@@ -45,50 +45,58 @@ export default function NativaLandingPage() {
             Our specialised insights and industry discernment will further your capacity to influence and grow your business in the competitive Australian market.
           </p>
           <div className="grid md:grid-cols-2 gap-8">
-            <div className="bg-white p-8 rounded-lg border border-gray-200">
+            <div className="group text-center">
               <div className="mb-6 flex justify-center">
-                <BookOpen className="w-12 h-12 text-nativa-purple" strokeWidth={1.5} />
+                <div className="w-20 h-20 rounded-full bg-white border-2 border-gray-300 group-hover:bg-nativa-purple flex items-center justify-center transition-colors">
+                  <BookOpen className="w-10 h-10 text-nativa-purple group-hover:text-white transition-colors" strokeWidth={1.5} />
+                </div>
               </div>
-              <h3 className="text-xl text-center font-semibold mb-4 text-gray-900">
+              <h3 className="text-xl font-semibold mb-4 text-gray-900">
                 Education
               </h3>
-              <p className="text-center text-gray-600 mb-4 font-semibold">
+              <p className="text-gray-600 mb-4 font-semibold">
                 Tailored to suit your needs.
               </p>
-              <p className="text-center text-gray-600">
+              <p className="text-gray-600">
                 We deliver education to empower Healthcare Practitioners & industry professionals with confidence in Australia&apos;s ever-changing regulatory environment.
               </p>
             </div>
-            <div className="bg-white p-8 rounded-lg border border-gray-200">
+            <div className="group text-center">
               <div className="mb-6 flex justify-center">
-                <Calendar className="w-12 h-12 text-nativa-purple" strokeWidth={1.5} />
+                <div className="w-20 h-20 rounded-full bg-white border-2 border-gray-300 group-hover:bg-nativa-purple flex items-center justify-center transition-colors">
+                  <Calendar className="w-10 h-10 text-nativa-purple group-hover:text-white transition-colors" strokeWidth={1.5} />
+                </div>
               </div>
-              <h3 className="text-xl text-center font-semibold mb-4 text-gray-900">
+              <h3 className="text-xl font-semibold mb-4 text-gray-900">
                 Consulting
               </h3>
-              <p className="text-center text-gray-600">
+              <p className="text-gray-600">
                 Let us set you up for success with expert guidance on every step of your journey. We assess and refine your operational processes to clarify your positioning and potential, while delivering the strategic advice, operational expertise, and regulatory confidence to strengthen your influence.
               </p>
             </div>
-            <div className="bg-white p-8 rounded-lg border border-gray-200">
+            <div className="group text-center">
               <div className="mb-6 flex justify-center">
-                <FlaskConical className="w-12 h-12 text-nativa-purple" strokeWidth={1.5} />
+                <div className="w-20 h-20 rounded-full bg-white border-2 border-gray-300 group-hover:bg-nativa-purple flex items-center justify-center transition-colors">
+                  <FlaskConical className="w-10 h-10 text-nativa-purple group-hover:text-white transition-colors" strokeWidth={1.5} />
+                </div>
               </div>
-              <h3 className="text-xl text-center font-semibold mb-4 text-gray-900">
+              <h3 className="text-xl font-semibold mb-4 text-gray-900">
                 Events
               </h3>
-              <p className="text-center text-gray-600">
+              <p className="text-gray-600">
                 Let Nativa lead in the delivery a professional event designed to provide attendees with high-quality learning, networking, and engagement opportunities in a memorable, time-efficient format.
               </p>
             </div>
-            <div className="bg-white p-8 rounded-lg border border-gray-200">
+            <div className="group text-center">
               <div className="mb-6 flex justify-center">
-                <Microscope className="w-12 h-12 text-nativa-purple" strokeWidth={1.5} />
+                <div className="w-20 h-20 rounded-full bg-white border-2 border-gray-300 group-hover:bg-nativa-purple flex items-center justify-center transition-colors">
+                  <Microscope className="w-10 h-10 text-nativa-purple group-hover:text-white transition-colors" strokeWidth={1.5} />
+                </div>
               </div>
-              <h3 className="text-xl text-center font-semibold mb-4 text-gray-900">
+              <h3 className="text-xl font-semibold mb-4 text-gray-900">
                 Compliance
               </h3>
-              <p className="text-center text-gray-600">
+              <p className="text-gray-600">
                 Effective consulting starts with genuine sector knowledge and ends with practical, confidence-boosting solutions. Nativa&apos;s consulting services are completely agnostic—rooted in science, compliance, and operational best practice, not in product deals or backdoor commissions.
               </p>
             </div>
