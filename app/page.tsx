@@ -1,10 +1,4 @@
 import { Button } from "@/components/ui/button"
-import {
-  Accordion,
-  AccordionContent,
-  AccordionItem,
-  AccordionTrigger,
-} from "@/components/ui/accordion"
 import { ArrowDown, BookOpen, Calendar, FlaskConical, Microscope } from "lucide-react"
 import Link from "next/link"
 import Image from "next/image"
@@ -303,54 +297,51 @@ Liz is passionate about advancing cannabinoid research and keeps a keen eye on e
         </div>
       </section>
 
-      {/* FAQ Section */}
-      <section className="py-20 px-4 bg-white">
-        <div className="max-w-3xl mx-auto">
-          <h2 className="text-3xl md:text-4xl font-playfair font-normal mb-12 text-center text-gray-900">
-            Frequently Asked Questions
+      {/* Testimonials Section */}
+      <section className="py-20 px-4 bg-nativa-olive text-white">
+        <div className="max-w-6xl mx-auto">
+          <h2 className="text-3xl md:text-4xl font-playfair font-normal mb-16 text-center">
+            Testimonials
           </h2>
-          <Accordion type="single" collapsible className="space-y-4">
-            <AccordionItem value="item-1" className="border border-gray-200 rounded-lg px-6">
-              <AccordionTrigger className="text-left hover:no-underline">
-                <span className="text-gray-900">Is eight forty a service, software, or both?</span>
-              </AccordionTrigger>
-              <AccordionContent className="text-gray-600">
-                Nativa is a specialized consulting service focused on elevating the medicinal cannabis industry through education, strategic guidance, and operational excellence. We provide tailored solutions to help healthcare professionals and organizations navigate the evolving landscape of medicinal cannabis.
-              </AccordionContent>
-            </AccordionItem>
-            <AccordionItem value="item-2" className="border border-gray-200 rounded-lg px-6">
-              <AccordionTrigger className="text-left hover:no-underline">
-                <span className="text-gray-900">Is eight forty a service, software, or both?</span>
-              </AccordionTrigger>
-              <AccordionContent className="text-gray-600">
-                Our services are designed for healthcare professionals, pharmacies, clinics, medicinal cannabis companies, and organizations looking to enhance their understanding and operations within the medicinal cannabis industry.
-              </AccordionContent>
-            </AccordionItem>
-            <AccordionItem value="item-3" className="border border-gray-200 rounded-lg px-6">
-              <AccordionTrigger className="text-left hover:no-underline">
-                <span className="text-gray-900">Is eight forty a service, software, or both?</span>
-              </AccordionTrigger>
-              <AccordionContent className="text-gray-600">
-                We offer comprehensive education programs, event coordination, product development consultation, and clinical trial support. Each service is customized to meet your specific needs and goals.
-              </AccordionContent>
-            </AccordionItem>
-            <AccordionItem value="item-4" className="border border-gray-200 rounded-lg px-6">
-              <AccordionTrigger className="text-left hover:no-underline">
-                <span className="text-gray-900">Is eight forty a service, software, or both?</span>
-              </AccordionTrigger>
-              <AccordionContent className="text-gray-600">
-                Getting started is easy. Simply reach out through our contact form, and we&apos;ll schedule a consultation to discuss your needs and how we can help elevate your business.
-              </AccordionContent>
-            </AccordionItem>
-            <AccordionItem value="item-5" className="border border-gray-200 rounded-lg px-6">
-              <AccordionTrigger className="text-left hover:no-underline">
-                <span className="text-gray-900">Is eight forty a service, software, or both?</span>
-              </AccordionTrigger>
-              <AccordionContent className="text-gray-600">
-                Our team brings decades of combined healthcare experience, specialized knowledge in medicinal cannabis, and a proven track record of delivering results for our clients across Australia.
-              </AccordionContent>
-            </AccordionItem>
-          </Accordion>
+          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+            <div className="space-y-4 border-l border-white/30 pl-6">
+              <div>
+                <h3 className="text-xl font-semibold mb-1">Kyle Darcey</h3>
+                <p className="text-sm text-gray-300">Wholelife Botanicals</p>
+              </div>
+              <p className="text-sm leading-relaxed text-gray-100">
+                &quot;Thank you to Nativa Education and Consulting for delivering some of the most comprehensive and relevant education I have ever seen to our pharmacists. You truly are experts in this field, and a shining example of what patient advocacy looks like.&quot;
+              </p>
+            </div>
+            <div className="space-y-4 border-l border-white/30 pl-6">
+              <div>
+                <h3 className="text-xl font-semibold mb-1">Dr Ferghal Armstrong</h3>
+                <p className="text-sm text-gray-300">Meducate</p>
+              </div>
+              <p className="text-sm leading-relaxed text-gray-100">
+                &quot;It&apos;s all thanks to our brilliant presenters, Rebecca Doyle and Liz Warburton. Their expertise and insights made this session highly valuable for everyone attending.&quot;
+              </p>
+            </div>
+            <div className="space-y-4 border-l border-white/30 pl-6">
+              <div>
+                <h3 className="text-xl font-semibold mb-1">Xanthe</h3>
+                <p className="text-sm text-gray-300">RAYS Wellness</p>
+              </div>
+              <p className="text-sm leading-relaxed text-gray-100">
+                &quot;We wanted to say a huge thank you for organising such a fantastic trivia night - what an absolute hit!
+                The evening struck the perfect balance of learning, laughs, and competition. Our whole team had such a great time...Thank you again for helping us celebrate RAYS&apos; 2nd birthday&quot;
+              </p>
+            </div>
+            <div className="space-y-4 border-l border-white/30 pl-6">
+              <div>
+                <h3 className="text-xl font-semibold mb-1">Michael Thorpe</h3>
+                <p className="text-sm text-gray-300">Carina Day & Night Pharmacy</p>
+              </div>
+              <p className="text-sm leading-relaxed text-gray-100">
+                &quot;The ladies at Nativa delivered a training that could not be faulted or improved upon. Their unique, brand agnostic training is genuine and steeped in an infectious enthusiasm and passion for the industry.&quot;
+              </p>
+            </div>
+          </div>
         </div>
       </section>
 
