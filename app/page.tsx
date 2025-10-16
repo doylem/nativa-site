@@ -376,12 +376,21 @@ Liz is passionate about advancing cannabinoid research and keeps a keen eye on e
       </section>
 
       {/* Footer */}
-      <footer className="bg-gray-900 text-gray-400 py-12">
-        <div className="max-w-6xl mx-auto px-4 text-center">
-          <p className="mb-4">
+      <footer className="bg-nativa-olive text-white py-16">
+        <div className="max-w-4xl mx-auto px-4 text-center space-y-8">
+          <div className="flex justify-center">
+            <Image
+              src="/images/nativa-logo-leaf-only.png"
+              alt="Nativa Logo"
+              width={120}
+              height={160}
+              className="opacity-90"
+            />
+          </div>
+          <p className="text-base">
             &copy; {currentYear} Nativa Education & Consulting Pty Ltd. All rights reserved.
           </p>
-          <p className="text-sm">
+          <p className="text-sm text-gray-300 max-w-2xl mx-auto">
             This website is for informational purposes only. Our services are designed to provide education and guidance in compliance with local laws and regulations.
           </p>
         </div>
