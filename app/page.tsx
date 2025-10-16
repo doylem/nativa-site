@@ -121,7 +121,7 @@ export default function NativaLandingPage() {
                     </div>
                   </div>
                   <div>
-                    <h3 className="text-xl font-semibold mb-3 text-gray-900">
+                    <h3 className="text-xl font-semibold font-playfair mb-3 text-gray-900">
                       Prescribers
                     </h3>
                     <p className="text-gray-600 mb-2 font-semibold text-sm">
