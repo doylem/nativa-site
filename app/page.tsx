@@ -1,5 +1,5 @@
 import { Button } from "@/components/ui/button"
-import { ArrowDown, BookOpen, Calendar, FlaskConical, Microscope } from "lucide-react"
+import { ArrowDown, BookOpen, Calendar, FlaskConical, Microscope, Clipboard } from "lucide-react"
 import Link from "next/link"
 import Image from "next/image"
 
