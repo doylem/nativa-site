@@ -350,7 +350,7 @@ Liz is passionate about advancing cannabinoid research and keeps a keen eye on e
             height={1080}
             width={1920}
             alt="Picture of green leaves"
-            className="w-full h-full object-cover opacity-30"
+            className="w-full h-full object-cover"
           />
         </div>
         <div className="relative z-10 text-center text-white max-w-3xl mx-auto">
