@@ -239,13 +239,13 @@ Liz is passionate about advancing cannabinoid research and keeps a keen eye on e
             <div className="grid md:grid-cols-2 gap-12 items-center">
               <div className="space-y-4">
                 <div className="inline-block px-4 py-1 bg-gray-100 rounded-full text-sm text-gray-600">
-                  Business Development Consultant
+                  CONSULTANT
                 </div>
                 <h3 className="text-2xl font-semibold text-gray-900">
-                  Cami Basso
+                  Cameron Rosin
                 </h3>
                 <p className="text-gray-600 leading-relaxed">
-                  A nurse with extensive experience in complex clinical care, Bec brings over 5 years of specialized expertise in medicinal cannabis education. As an award-winning Medical Science Liaison and respected industry figure, she delivers exceptional training for healthcare professionals on scientific research, prescribing guidelines, and regulatory compliance.
+                  A registered nurse and integrative clinician with over seven years of clinical practice in the medicinal cannabis space, Cam offers deep expertise in patient care and operations. He has led the compliant development and management of multiple healthcare clinics, ensuring regulatory standards and excellence at every stage. Cam is also a skilled communicator, podcast host, writer, and the founder of The Third Path—an initiative advancing integrative and regenerative approaches in healthcare.
                 </p>
               </div>
               <div className="relative">
