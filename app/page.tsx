@@ -64,7 +64,7 @@ export default function NativaLandingPage() {
             <div className="group text-center">
               <div className="mb-6 flex justify-center">
                 <div className="w-20 h-20 rounded-full bg-white border-2 border-gray-300 group-hover:bg-nativa-purple flex items-center justify-center transition-colors">
-                  <Calendar className="w-10 h-10 text-nativa-purple group-hover:text-white transition-colors" strokeWidth={1.5} />
+<FlaskConical className="w-10 h-10 text-nativa-purple group-hover:text-white transition-colors" strokeWidth={1.5} />
                 </div>
               </div>
               <h3 className="text-xl font-semibold mb-4 text-gray-900">
@@ -77,7 +77,7 @@ export default function NativaLandingPage() {
             <div className="group text-center">
               <div className="mb-6 flex justify-center">
                 <div className="w-20 h-20 rounded-full bg-white border-2 border-gray-300 group-hover:bg-nativa-purple flex items-center justify-center transition-colors">
-                  <FlaskConical className="w-10 h-10 text-nativa-purple group-hover:text-white transition-colors" strokeWidth={1.5} />
+                <Calendar className="w-10 h-10 text-nativa-purple group-hover:text-white transition-colors" strokeWidth={1.5} />
                 </div>
               </div>
               <h3 className="text-xl font-semibold mb-4 text-gray-900">
@@ -90,7 +90,7 @@ export default function NativaLandingPage() {
             <div className="group text-center">
               <div className="mb-6 flex justify-center">
                 <div className="w-20 h-20 rounded-full bg-white border-2 border-gray-300 group-hover:bg-nativa-purple flex items-center justify-center transition-colors">
-                  <Microscope className="w-10 h-10 text-nativa-purple group-hover:text-white transition-colors" strokeWidth={1.5} />
+                  <Clipboard className="w-10 h-10 text-nativa-purple group-hover:text-white transition-colors" strokeWidth={1.5} />
                 </div>
               </div>
               <h3 className="text-xl font-semibold mb-4 text-gray-900">
