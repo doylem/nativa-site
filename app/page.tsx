@@ -224,13 +224,14 @@ export default function NativaLandingPage() {
               </div>
               <div className="space-y-4 md:order-2">
                 <div className="inline-block px-4 py-1 bg-gray-100 rounded-full text-sm text-gray-600">
-                  Co-Founder & Operations Director
+                                    CO-FOUNDER & DIRECTOR
                 </div>
                 <h3 className="text-2xl font-semibold text-gray-900">
                   Liz Warburton
                 </h3>
                 <p className="text-gray-600 leading-relaxed">
-                  A qualified Naturopath with deep expertise in alternative medicine and product formulation. Liz serves as Nativa&apos;s product specialist, bringing comprehensive knowledge of the Australian medicinal cannabis industry. Her experience spans pharmacy education, operational excellence, supply chain management, and regulatory compliance. As a passionate advocate for medicinal cannabis, she stays at the forefront of research and innovative healthcare solutions.
+                  A qualified Naturopath with a sharp focus on alternative medicine and innovative product formulation, Liz Warburton stands out as Nativa’s product and compliance expert. As operations manager of one of Australia’s busiest pharmacies, Liz oversaw an impressive 700 scripts daily, demonstrating her skill not only in high-volume workflow management but also in scaling operations to drive consistent patient retention and satisfaction. After her pharmacy leadership, Liz deepened her expertise in supply chain operations and market compliance, mastering the complexities of medicinal cannabis distribution and regulatory requirements across the Australian landscape.
+Liz is passionate about advancing cannabinoid research and keeps a keen eye on emerging healthcare solutions. Her fierce advocacy, paired with her practical know-how, ensures that Nativa delivers education, consultation, and industry support with unmatched integrity and operational rigour.
                 </p>
               </div>
             </div>
