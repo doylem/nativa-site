@@ -291,9 +291,6 @@ Liz is passionate about advancing cannabinoid research and keeps a keen eye on e
             <span className="text-purple-600">people</span> &amp;{" "}
             <span className="text-purple-600">clients</span>.
           </p>
-          <p className="mt-8 text-gray-600">
-            We can&apos;t wait to work with you! Let&apos;s chat, we really want to know who we can help.
-          </p>
         </div>
       </section>
 
