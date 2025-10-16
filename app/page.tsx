@@ -250,8 +250,8 @@ Liz is passionate about advancing cannabinoid research and keeps a keen eye on e
               </div>
               <div className="relative">
                 <Image
-                  src="/images/director-bec.jpg"
-                  alt="Cami Basso"
+                  src="/images/consultant-cam.jpg"
+                  alt="Cameron Rosin"
                   width={500}
                   height={600}
                   className="rounded-lg shadow-lg w-full"
