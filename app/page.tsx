@@ -1,5 +1,5 @@
 import { Button } from "@/components/ui/button"
-import { ArrowDown, GraduationCap, CalendarHeart, Lightbulb, Microscope, ClipboardList } from "lucide-react"
+import { ArrowDown, GraduationCap, CalendarHeart, Lightbulb, ClipboardList } from "lucide-react"
 import Link from "next/link"
 import Image from "next/image"
 
