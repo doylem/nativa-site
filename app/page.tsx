@@ -361,7 +361,7 @@ Liz is passionate about advancing cannabinoid research and keeps a keen eye on e
             A transformational education and consulting practice helping you grow your business.
           </h2>
           <p className="text-lg mb-8 text-gray-200">
-            We can&apos;t wait to work with you! Contact us today to discover how Nativa can elevate your medicinal cannabis business.
+            Contact us today to discover how Nativa can elevate your medicinal cannabis business.
           </p>
           <Link
             href="https://forms.gle/9vALopPJLs3CSjYPA"
