@@ -1,5 +1,5 @@
 import { Button } from "@/components/ui/button"
-import { ArrowDown, BookOpen, Calendar, FlaskConical, Microscope, ClipboardList } from "lucide-react"
+import { ArrowDown, GraduationCap, Calendar, FlaskConical, Microscope, ClipboardList } from "lucide-react"
 import Link from "next/link"
 import Image from "next/image"
 
@@ -48,7 +48,7 @@ export default function NativaLandingPage() {
             <div className="group text-center">
               <div className="mb-6 flex justify-center">
                 <div className="w-20 h-20 rounded-full bg-white border-2 border-gray-300 group-hover:bg-nativa-purple flex items-center justify-center transition-colors">
-                  <BookOpen className="w-10 h-10 text-nativa-purple group-hover:text-white transition-colors" strokeWidth={1.5} />
+                  <GraduationCap className="w-10 h-10 text-nativa-purple group-hover:text-white transition-colors" strokeWidth={1.5} />
                 </div>
               </div>
               <h3 className="text-xl font-semibold mb-4 text-gray-900">
