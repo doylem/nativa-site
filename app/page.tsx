@@ -1,16 +1,16 @@
-import { Button } from "@/components/ui/button"
+import { Button } from "@/components/ui/button";
 import {
   ArrowDown,
   GraduationCap,
   CalendarHeart,
   Lightbulb,
   ClipboardList,
-} from "lucide-react"
-import Link from "next/link"
-import Image from "next/image"
+} from "lucide-react";
+import Link from "next/link";
+import Image from "next/image";
 
 export default function NativaLandingPage() {
-  const currentYear = new Date().getFullYear()
+  const currentYear = new Date().getFullYear();
 
   return (
     <div className="min-h-screen bg-nativa-green">
@@ -200,7 +200,7 @@ export default function NativaLandingPage() {
                       strategies.
                     </p>
                     <p className="text-gray-600 text-sm leading-relaxed">
-                      Whether you&apos;re entering the medicinal cannabis space
+                      Whether you&apos;re entering the emerging medicines space
                       or seeking to future-proof your organisation, we deliver
                       independent, pragmatic guidance that accelerates your
                       impact and ensures patient-first, regulator-ready
@@ -289,13 +289,13 @@ export default function NativaLandingPage() {
                   patient retention and satisfaction. After her pharmacy
                   leadership, Liz deepened her expertise in supply chain
                   operations and market compliance, mastering the complexities
-                  of medicinal cannabis distribution and regulatory requirements
-                  across the Australian landscape. Liz is passionate about
-                  advancing cannabinoid research and keeps a keen eye on
-                  emerging healthcare solutions. Her fierce advocacy, paired
-                  with her practical know-how, ensures that Nativa delivers
-                  education, consultation, and industry support with unmatched
-                  integrity and operational rigour.
+                  of distribution and regulatory requirements across the
+                  Australian landscape. Liz is passionate about advancing
+                  cannabinoid research and keeps a keen eye on emerging
+                  healthcare solutions. Her fierce advocacy, paired with her
+                  practical know-how, ensures that Nativa delivers education,
+                  consultation, and industry support with unmatched integrity
+                  and operational rigour.
                 </p>
               </div>
               <div className="relative order-2 md:order-1">
@@ -440,8 +440,8 @@ export default function NativaLandingPage() {
             grow your business.
           </h2>
           <p className="text-lg mb-8 text-gray-200">
-            Contact us today to discover how Nativa can elevate your medicinal
-            cannabis business.
+            Contact us today to discover how Nativa can elevate your emerging
+            medicines business.
           </p>
           <Link
             href="https://forms.gle/9vALopPJLs3CSjYPA"
@@ -479,5 +479,5 @@ export default function NativaLandingPage() {
         </div>
       </footer>
     </div>
-  )
+  );
 }
