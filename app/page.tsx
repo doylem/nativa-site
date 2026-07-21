@@ -440,8 +440,8 @@ export default function NativaLandingPage() {
             grow your business.
           </h2>
           <p className="text-lg mb-8 text-gray-200">
-            Contact us today to discover how Nativa can elevate your emerging
-            medicines business.
+            Contact us today to discover how Nativa can elevate your business in
+            emerging medicines.
           </p>
           <Link
             href="https://forms.gle/9vALopPJLs3CSjYPA"
