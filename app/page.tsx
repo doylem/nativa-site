@@ -291,9 +291,9 @@ export default function NativaLandingPage() {
                   operations and market compliance, mastering the complexities
                   of distribution and regulatory requirements across the
                   Australian landscape. Liz is passionate about advancing
-                  cannabinoid research and keeps a keen eye on emerging
-                  healthcare solutions. Her fierce advocacy, paired with her
-                  practical know-how, ensures that Nativa delivers education,
+                  emerging medicine research and keeps a keen eye on healthcare
+                  solutions. Her fierce advocacy, paired with her practical
+                  know-how, ensures that Nativa delivers education,
                   consultation, and industry support with unmatched integrity
                   and operational rigour.
                 </p>
