@@ -33,8 +33,8 @@ export default function NativaLandingPage() {
             <em>Standard Practice</em>
           </h1>
           <p className="text-base md:text-xl mb-8 max-w-2xl mx-auto leading-relaxed">
-            Our vision is to educate and elevate cannabis in Australia and
-            across the globe by fostering a culture of transparency,
+            Our vision is to educate and elevate emerging medicines in Australia
+            and across the globe by fostering a culture of transparency,
             collaboration, and excellence across all facets of industry.
           </p>
           <Link href="#elevate">
@@ -251,12 +251,12 @@ export default function NativaLandingPage() {
                 <p className="text-gray-600 leading-relaxed">
                   A passionate nurse with roots in complex clinical care, Bec is
                   Nativa&apos;s medical sales expert having 5 years of
-                  experience educating prescribers of cannabis and improving
-                  patient outcomes. Bec is an engaging presenter and excels at
-                  event planning. An award-winning MSL, and well known industry
-                  figure, Bec provides exceptional education for MSLs and
-                  clinicians on scientific research, prescribing guidelines and
-                  Australian regulations.
+                  experience educating prescribers of emerging medicines and
+                  improving patient outcomes. Bec is an engaging presenter and
+                  excels at event planning. An award-winning MSL, and well known
+                  industry figure, Bec provides exceptional education for MSLs
+                  and clinicians on scientific research, prescribing guidelines
+                  and Australian regulations.
                 </p>
               </div>
               <div className="relative order-2">
