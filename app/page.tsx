@@ -8,12 +8,16 @@ import {
 } from "lucide-react";
 import Link from "next/link";
 import Image from "next/image";
+import { SiteHeader } from "@/components/site-header";
+import { CONTACT_FORM_URL } from "@/lib/links";
 
 export default function NativaLandingPage() {
   const currentYear = new Date().getFullYear();
 
   return (
     <div className="min-h-screen bg-nativa-green">
+      <SiteHeader />
+
       {/* Hero Section */}
       <section className="min-h-screen flex items-center justify-center bg-nativa-olive">
         <div className="text-center text-white p-8 mb-16 max-w-4xl mx-auto">
@@ -46,7 +50,7 @@ export default function NativaLandingPage() {
       </section>
 
       {/* Elevate Your Business Section */}
-      <section id="elevate" className="py-20 px-4 bg-gray-50">
+      <section id="elevate" className="scroll-mt-16 py-20 px-4 bg-gray-50">
         <div className="max-w-6xl mx-auto">
           <h2 className="text-3xl md:text-4xl font-playfair font-normal mb-4 text-center text-gray-900">
             Elevate Your Business with Nativa
@@ -444,7 +448,7 @@ export default function NativaLandingPage() {
             emerging medicines.
           </p>
           <Link
-            href="https://forms.gle/9vALopPJLs3CSjYPA"
+            href={CONTACT_FORM_URL}
             rel="noopener noreferrer"
             target="_blank"
           >
