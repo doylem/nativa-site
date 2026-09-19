@@ -64,6 +64,11 @@ const config: Config = {
         "nativa-white": "#faf6f1",
         "nativa-purple": "#945498",
 
+        // Nativa brand v2 (landing page)
+        "nativa-navy": "#06121f",
+        "nativa-lime": "#bec95d",
+        "nativa-ivory": "#eae6e2",
+
         // ElevatED sub-brand (matches the LearnWorlds site)
         elevated: {
           navy: "#1b1f2e",

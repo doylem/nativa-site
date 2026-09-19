@@ -5,7 +5,7 @@ import Image from "next/image"
 import Link from "next/link"
 import { cn } from "@/lib/utils"
 
-/** Top menu for the Nativa homepage. Transparent over the hero, solid once scrolled. */
+/** Top menu for the Nativa homepage. Always Nativa Navy; gains a shadow once scrolled. */
 export function SiteHeader() {
   const [scrolled, setScrolled] = useState(false)
 
@@ -19,23 +19,23 @@ export function SiteHeader() {
   return (
     <header
       className={cn(
-        "fixed inset-x-0 top-0 z-50 transition-colors duration-300",
-        scrolled ? "bg-nativa-olive/95 shadow-md backdrop-blur-sm" : "bg-transparent"
+        "fixed inset-x-0 top-0 z-50 bg-nativa-navy transition-shadow duration-300",
+        scrolled && "shadow-md shadow-black/30"
       )}
     >
       <nav className="mx-auto flex h-16 max-w-6xl items-center justify-between px-4 md:h-20">
         <Link href="/" aria-label="Nativa home" className="flex items-center">
           <Image
-            src="/images/nativa-logo-leaf-only.png"
+            src="/images/brand-v2/nativa-monogram.svg"
             alt=""
-            width={120}
-            height={160}
-            className="h-10 w-auto md:h-12"
+            width={878}
+            height={764}
+            className="h-9 w-auto md:h-10"
           />
         </Link>
         <Link
           href="/elevated"
-          className="rounded-full border border-white/60 px-5 py-2 text-sm font-medium uppercase tracking-widest text-white transition-colors hover:bg-white hover:text-nativa-olive"
+          className="rounded-full border border-nativa-ivory/60 px-5 py-2 text-sm font-medium uppercase tracking-widest text-nativa-ivory transition-colors hover:border-nativa-lime hover:bg-nativa-lime hover:text-nativa-navy focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-nativa-lime focus-visible:ring-offset-2 focus-visible:ring-offset-nativa-navy"
         >
           Education
         </Link>

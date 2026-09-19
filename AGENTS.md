@@ -37,7 +37,8 @@ The two pages are deliberately different brands. Don't mix their tokens.
 
 **Nativa (`/`)**
 
-- Brand colours are Tailwind tokens in `tailwind.config.ts`: `nativa-olive` (#526147, primary dark), `nativa-purple` (#945498, accent), `nativa-green`, `nativa-pink`, `nativa-orange`, `nativa-white`. Use these rather than raw hex. A few stray `text-purple-600` usages exist; prefer `nativa-purple`.
+- Brand v2 colours are Tailwind tokens in `tailwind.config.ts`: `nativa-navy` (#06121f, header, hero and every dark section), `nativa-lime` (#bec95d, buttons, interactive elements and hover states), `nativa-ivory` (#eae6e2, replaces white for backgrounds and text). Use these rather than raw hex, and don't use plain `white`. The older `nativa-olive`, `nativa-purple`, `nativa-green`, `nativa-pink`, `nativa-orange` and `nativa-white` tokens are no longer used on the landing page.
+- Logos are SVG in `public/images/brand-v2/`: `nativa-wordmark.svg` (hero) and `nativa-monogram.svg` (the N with a dot, used in the header and footer). Originals from the designer are in `brand-v2/source/`. Favicons in `public/` are generated from the monogram on navy.
 - Headings use `font-playfair` (the Tailwind `fontFamily` entry wired to the `--font-playfair` variable). Body text falls back to `font-family: Arial` from `app/globals.css`.
 - `app/globals.css` contains both the Create Next App `:root` hex vars and the shadcn HSL vars, and they collide on `--background`/`--foreground`. shadcn's semantic colours (`bg-background`, `bg-primary`, etc.) are therefore unreliable; the page styles buttons explicitly with brand classes instead. Follow that pattern or clean up `globals.css` first.
 **ElevatED (`/elevated`)** mirrors the LearnWorlds site so the handoff feels seamless.

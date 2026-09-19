@@ -15,18 +15,19 @@ export default function NativaLandingPage() {
   const currentYear = new Date().getFullYear();
 
   return (
-    <div className="min-h-screen bg-nativa-green">
+    <div className="min-h-screen bg-nativa-navy">
       <SiteHeader />
 
       {/* Hero Section */}
-      <section className="min-h-screen flex items-center justify-center bg-nativa-olive">
-        <div className="text-center text-white p-8 mb-16 max-w-4xl mx-auto">
+      <section className="min-h-screen flex items-center justify-center bg-nativa-navy">
+        <div className="text-center text-nativa-ivory p-8 mb-16 max-w-4xl mx-auto">
           <div className="flex justify-center mb-16">
             <Image
-              src="/images/nativa-site-logo copy.png"
-              width={1659}
-              height={568}
-              alt="Nativa logo"
+              src="/images/brand-v2/nativa-wordmark.svg"
+              width={733}
+              height={197}
+              alt="Nativa"
+              priority
               className="object-center"
               style={{ width: "500px", minWidth: "350px" }}
             />
@@ -42,7 +43,7 @@ export default function NativaLandingPage() {
             collaboration, and excellence across all facets of industry.
           </p>
           <Link href="#elevate">
-            <Button className="px-16 py-3 bg-white text-nativa-olive hover:bg-gray-100">
+            <Button className="px-16 py-3 bg-nativa-lime text-nativa-navy hover:bg-nativa-lime/85 focus-visible:ring-2 focus-visible:ring-nativa-ivory focus-visible:ring-offset-2 focus-visible:ring-offset-nativa-navy">
               Learn More
             </Button>
           </Link>
@@ -50,7 +51,7 @@ export default function NativaLandingPage() {
       </section>
 
       {/* Elevate Your Business Section */}
-      <section id="elevate" className="scroll-mt-16 py-20 px-4 bg-gray-50">
+      <section id="elevate" className="scroll-mt-16 py-20 px-4 bg-nativa-ivory">
         <div className="max-w-6xl mx-auto">
           <h2 className="text-3xl md:text-4xl font-playfair font-normal mb-4 text-center text-gray-900">
             Elevate Your Business with Nativa
@@ -63,9 +64,9 @@ export default function NativaLandingPage() {
           <div className="grid md:grid-cols-2 gap-8">
             <div className="group text-center">
               <div className="mb-6 flex justify-center">
-                <div className="w-20 h-20 rounded-full bg-white border-2 border-gray-300 group-hover:bg-nativa-purple flex items-center justify-center transition-colors">
+                <div className="w-20 h-20 rounded-full bg-nativa-ivory border-2 border-nativa-navy/20 group-hover:bg-nativa-lime group-hover:border-nativa-lime flex items-center justify-center transition-colors">
                   <GraduationCap
-                    className="w-10 h-10 text-nativa-purple group-hover:text-white transition-colors"
+                    className="w-10 h-10 text-nativa-navy transition-colors"
                     strokeWidth={1.5}
                   />
                 </div>
@@ -84,9 +85,9 @@ export default function NativaLandingPage() {
             </div>
             <div className="group text-center">
               <div className="mb-6 flex justify-center">
-                <div className="w-20 h-20 rounded-full bg-white border-2 border-gray-300 group-hover:bg-nativa-purple flex items-center justify-center transition-colors">
+                <div className="w-20 h-20 rounded-full bg-nativa-ivory border-2 border-nativa-navy/20 group-hover:bg-nativa-lime group-hover:border-nativa-lime flex items-center justify-center transition-colors">
                   <Lightbulb
-                    className="w-10 h-10 text-nativa-purple group-hover:text-white transition-colors"
+                    className="w-10 h-10 text-nativa-navy transition-colors"
                     strokeWidth={1.5}
                   />
                 </div>
@@ -104,9 +105,9 @@ export default function NativaLandingPage() {
             </div>
             <div className="group text-center">
               <div className="mb-6 flex justify-center">
-                <div className="w-20 h-20 rounded-full bg-white border-2 border-gray-300 group-hover:bg-nativa-purple flex items-center justify-center transition-colors">
+                <div className="w-20 h-20 rounded-full bg-nativa-ivory border-2 border-nativa-navy/20 group-hover:bg-nativa-lime group-hover:border-nativa-lime flex items-center justify-center transition-colors">
                   <CalendarHeart
-                    className="w-10 h-10 text-nativa-purple group-hover:text-white transition-colors"
+                    className="w-10 h-10 text-nativa-navy transition-colors"
                     strokeWidth={1.5}
                   />
                 </div>
@@ -122,9 +123,9 @@ export default function NativaLandingPage() {
             </div>
             <div className="group text-center">
               <div className="mb-6 flex justify-center">
-                <div className="w-20 h-20 rounded-full bg-white border-2 border-gray-300 group-hover:bg-nativa-purple flex items-center justify-center transition-colors">
+                <div className="w-20 h-20 rounded-full bg-nativa-ivory border-2 border-nativa-navy/20 group-hover:bg-nativa-lime group-hover:border-nativa-lime flex items-center justify-center transition-colors">
                   <ClipboardList
-                    className="w-10 h-10 text-nativa-purple group-hover:text-white transition-colors"
+                    className="w-10 h-10 text-nativa-navy transition-colors"
                     strokeWidth={1.5}
                   />
                 </div>
@@ -156,16 +157,16 @@ export default function NativaLandingPage() {
           />
         </div>
         <div className="relative z-10 max-w-6xl mx-auto">
-          <h2 className="text-3xl md:text-4xl font-playfair font-normal mb-16 text-white text-center">
+          <h2 className="text-3xl md:text-4xl font-playfair font-normal mb-16 text-nativa-ivory text-center">
             Harness our distinctive expertise and forward-thinking approach to
             education to gain a competitive advantage.
           </h2>
           <div className="max-w-3xl mx-auto">
             <div className="space-y-8">
-              <div className="group cursor-pointer bg-white/90 backdrop-blur-sm hover:bg-white/95 p-6 rounded-lg transition-all shadow-md">
+              <div className="group cursor-pointer bg-nativa-ivory/90 backdrop-blur-sm hover:bg-nativa-ivory/95 p-6 rounded-lg transition-all shadow-md">
                 <div className="flex gap-4 items-start">
                   <div className="flex-shrink-0">
-                    <div className="w-16 h-16 rounded-full bg-white group-hover:bg-nativa-purple flex items-center justify-center text-nativa-purple group-hover:text-white font-semibold text-lg transition-colors border-2 border-nativa-purple">
+                    <div className="w-16 h-16 rounded-full bg-nativa-ivory group-hover:bg-nativa-lime flex items-center justify-center text-nativa-navy font-semibold text-lg transition-colors border-2 border-nativa-navy group-hover:border-nativa-lime">
                       01
                     </div>
                   </div>
@@ -187,10 +188,10 @@ export default function NativaLandingPage() {
                   </div>
                 </div>
               </div>
-              <div className="group cursor-pointer bg-white/90 backdrop-blur-sm hover:bg-white/95 p-6 rounded-lg transition-all shadow-md">
+              <div className="group cursor-pointer bg-nativa-ivory/90 backdrop-blur-sm hover:bg-nativa-ivory/95 p-6 rounded-lg transition-all shadow-md">
                 <div className="flex gap-4 items-start">
                   <div className="flex-shrink-0">
-                    <div className="w-16 h-16 rounded-full bg-white group-hover:bg-nativa-purple flex items-center justify-center text-nativa-purple group-hover:text-white font-semibold text-lg transition-colors border-2 border-nativa-purple">
+                    <div className="w-16 h-16 rounded-full bg-nativa-ivory group-hover:bg-nativa-lime flex items-center justify-center text-nativa-navy font-semibold text-lg transition-colors border-2 border-nativa-navy group-hover:border-nativa-lime">
                       02
                     </div>
                   </div>
@@ -213,10 +214,10 @@ export default function NativaLandingPage() {
                   </div>
                 </div>
               </div>
-              <div className="group cursor-pointer bg-white/90 backdrop-blur-sm hover:bg-white/95 p-6 rounded-lg transition-all shadow-md">
+              <div className="group cursor-pointer bg-nativa-ivory/90 backdrop-blur-sm hover:bg-nativa-ivory/95 p-6 rounded-lg transition-all shadow-md">
                 <div className="flex gap-4 items-start">
                   <div className="flex-shrink-0">
-                    <div className="w-16 h-16 rounded-full bg-white group-hover:bg-nativa-purple flex items-center justify-center text-nativa-purple group-hover:text-white font-semibold text-lg transition-colors border-2 border-nativa-purple">
+                    <div className="w-16 h-16 rounded-full bg-nativa-ivory group-hover:bg-nativa-lime flex items-center justify-center text-nativa-navy font-semibold text-lg transition-colors border-2 border-nativa-navy group-hover:border-nativa-lime">
                       03
                     </div>
                   </div>
@@ -238,7 +239,7 @@ export default function NativaLandingPage() {
       </section>
 
       {/* Team Section */}
-      <section className="py-20 px-4 bg-white">
+      <section className="py-20 px-4 bg-nativa-ivory">
         <div className="max-w-6xl mx-auto">
           <h2 className="text-3xl md:text-4xl font-playfair font-normal mb-16 text-center text-gray-900">
             Our Team
@@ -246,7 +247,7 @@ export default function NativaLandingPage() {
           <div className="space-y-16">
             <div className="grid md:grid-cols-2 gap-12 items-center">
               <div className="space-y-4 order-1">
-                <div className="inline-block px-4 py-1 bg-gray-100 rounded-full text-sm text-gray-600">
+                <div className="inline-block px-4 py-1 bg-nativa-navy/5 rounded-full text-sm text-gray-600">
                   CO-FOUNDER & DIRECTOR
                 </div>
                 <h3 className="text-2xl font-semibold text-gray-900">
@@ -276,7 +277,7 @@ export default function NativaLandingPage() {
 
             <div className="grid md:grid-cols-2 gap-12 items-center">
               <div className="space-y-4 order-1 md:order-2">
-                <div className="inline-block px-4 py-1 bg-gray-100 rounded-full text-sm text-gray-600">
+                <div className="inline-block px-4 py-1 bg-nativa-navy/5 rounded-full text-sm text-gray-600">
                   CO-FOUNDER & DIRECTOR
                 </div>
                 <h3 className="text-2xl font-semibold text-gray-900">
@@ -317,13 +318,13 @@ export default function NativaLandingPage() {
       </section>
 
       {/* Testimonials Section */}
-      <section className="py-20 px-4 bg-nativa-olive text-white">
+      <section className="py-20 px-4 bg-nativa-navy text-nativa-ivory">
         <div className="max-w-6xl mx-auto">
           <h2 className="text-3xl md:text-4xl font-playfair font-normal mb-16 text-center">
             Testimonials
           </h2>
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
-            <div className="space-y-4 border-l border-white/30 pl-6">
+            <div className="space-y-4 border-l border-nativa-ivory/30 pl-6">
               <div>
                 <h3 className="text-xl font-semibold mb-1">Kyle Darcey</h3>
                 <p className="text-sm text-gray-300">Wholelife Botanicals</p>
@@ -336,7 +337,7 @@ export default function NativaLandingPage() {
                 like.&quot;
               </p>
             </div>
-            <div className="space-y-4 border-l border-white/30 pl-6">
+            <div className="space-y-4 border-l border-nativa-ivory/30 pl-6">
               <div>
                 <h3 className="text-xl font-semibold mb-1">
                   Dr Ferghal Armstrong
@@ -349,7 +350,7 @@ export default function NativaLandingPage() {
                 session highly valuable for everyone attending.&quot;
               </p>
             </div>
-            <div className="space-y-4 border-l border-white/30 pl-6">
+            <div className="space-y-4 border-l border-nativa-ivory/30 pl-6">
               <div>
                 <h3 className="text-xl font-semibold mb-1">Xanthe</h3>
                 <p className="text-sm text-gray-300">RAYS Wellness</p>
@@ -362,7 +363,7 @@ export default function NativaLandingPage() {
                 helping us celebrate RAYS&apos; 2nd birthday&quot;
               </p>
             </div>
-            <div className="space-y-4 border-l border-white/30 pl-6">
+            <div className="space-y-4 border-l border-nativa-ivory/30 pl-6">
               <div>
                 <h3 className="text-xl font-semibold mb-1">Michael Thorpe</h3>
                 <p className="text-sm text-gray-300">
@@ -381,21 +382,21 @@ export default function NativaLandingPage() {
       </section>
 
       {/* Admired By Section */}
-      <section className="py-20 px-4 bg-gray-50">
+      <section className="py-20 px-4 bg-nativa-ivory">
         <div className="max-w-4xl mx-auto text-center">
           <h2 className="text-3xl md:text-4xl font-playfair font-normal mb-4 text-gray-900">
             Admired by companies
           </h2>
           <p className="text-3xl md:text-4xl font-playfair font-normal text-gray-900">
             and professionals who truly value their{" "}
-            <span className="text-purple-600">people</span> &amp;{" "}
-            <span className="text-purple-600">clients</span>.
+            <span className="underline decoration-nativa-lime decoration-4 underline-offset-4">people</span> &amp;{" "}
+            <span className="underline decoration-nativa-lime decoration-4 underline-offset-4">clients</span>.
           </p>
         </div>
       </section>
 
       {/* Stats Section */}
-      <section className="py-16 px-4 bg-nativa-olive text-white">
+      <section className="py-16 px-4 bg-nativa-navy text-nativa-ivory">
         <div className="max-w-6xl mx-auto">
           <div className="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
             <div>
@@ -425,17 +426,17 @@ export default function NativaLandingPage() {
       </section>
 
       {/* CTA Section */}
-      <section className="relative py-32 px-4 overflow-hidden bg-nativa-olive">
-        <div className="absolute inset-0 z-0">
+      <section className="relative py-32 px-4 overflow-hidden bg-nativa-navy">
+        <div className="absolute inset-0 z-0 bg-nativa-navy">
           <Image
             src="/images/leaf-bg-bottom.jpg"
             height={1080}
             width={1920}
             alt="Picture of green leaves"
-            className="w-full h-full object-cover"
+            className="w-full h-full object-cover mix-blend-lighten"
           />
         </div>
-        <div className="relative z-10 text-center text-white max-w-3xl mx-auto">
+        <div className="relative z-10 text-center text-nativa-ivory max-w-3xl mx-auto">
           <div className="mb-8">
             <ArrowDown className="mx-auto" size={48} />
           </div>
@@ -452,7 +453,7 @@ export default function NativaLandingPage() {
             rel="noopener noreferrer"
             target="_blank"
           >
-            <Button className="px-8 py-3 bg-white text-nativa-olive hover:bg-gray-100">
+            <Button className="px-8 py-3 bg-nativa-lime text-nativa-navy hover:bg-nativa-lime/85 focus-visible:ring-2 focus-visible:ring-nativa-ivory focus-visible:ring-offset-2 focus-visible:ring-offset-nativa-navy">
               Get in Touch
             </Button>
           </Link>
@@ -460,15 +461,15 @@ export default function NativaLandingPage() {
       </section>
 
       {/* Footer */}
-      <footer className="bg-nativa-olive text-white py-16">
+      <footer className="bg-nativa-navy text-nativa-ivory py-16">
         <div className="max-w-4xl mx-auto px-4 text-center space-y-8">
           <div className="flex justify-center">
             <Image
-              src="/images/nativa-logo-leaf-only.png"
-              alt="Nativa Logo"
-              width={120}
-              height={160}
-              className="opacity-90"
+              src="/images/brand-v2/nativa-monogram.svg"
+              alt="Nativa"
+              width={878}
+              height={764}
+              className="h-auto w-20"
             />
           </div>
           <p className="text-base">
