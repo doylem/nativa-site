@@ -11,6 +11,10 @@ const nextConfig = {
   //   basePath: "/nativa-site",
   // },
   reactStrictMode: true,
+  images: {
+    // ElevatED logo is served from LearnWorlds until we have our own file
+    remotePatterns: [{ protocol: "https", hostname: "lwfiles.mycourse.app" }],
+  },
 }
 
 export default nextConfig

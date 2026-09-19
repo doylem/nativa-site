@@ -11,6 +11,8 @@ const config: Config = {
     extend: {
       fontFamily: {
         playfair: ["var(--font-playfair)"],
+        mukta: ["var(--font-mukta)"],
+        raleway: ["var(--font-raleway)"],
       },
       colors: {
         background: "hsl(var(--background))",
@@ -61,6 +63,15 @@ const config: Config = {
         "nativa-orange": "#faedd8",
         "nativa-white": "#faf6f1",
         "nativa-purple": "#945498",
+
+        // ElevatED sub-brand (matches the LearnWorlds site)
+        elevated: {
+          navy: "#1b1f2e",
+          cream: "#efedec",
+          lime: "#bec95d",
+          sage: "#edefec",
+          mist: "#f4f4f4",
+        },
 
         green: {
           light: "hsl(var(--n-green-light))",

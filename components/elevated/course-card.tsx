@@ -1,0 +1,43 @@
+import { Clock, MonitorPlay, Presentation, Video } from "lucide-react"
+import type { Course, CourseFormat } from "@/data/courses"
+import { formatAud } from "@/lib/format"
+
+const formatIcon: Record<CourseFormat, typeof Clock> = {
+  "On-demand": MonitorPlay,
+  "Live webinar": Video,
+  Workshop: Presentation,
+}
+
+export function CourseCard({ course }: { course: Course }) {
+  const FormatIcon = formatIcon[course.format]
+
+  return (
+    <article className="flex h-full flex-col overflow-hidden rounded-lg bg-white shadow-sm ring-1 ring-black/5 transition-shadow hover:shadow-lg">
+      <div className="h-1.5 bg-elevated-lime" />
+      <div className="flex flex-1 flex-col p-6">
+        <h4 className="font-mukta text-2xl font-bold leading-tight">
+          {course.title}
+        </h4>
+        <ul className="mt-3 flex flex-wrap gap-x-4 gap-y-1 text-sm text-elevated-navy/70">
+          <li className="flex items-center gap-1.5">
+            <FormatIcon className="h-4 w-4" aria-hidden="true" />
+            {course.format}
+          </li>
+          <li className="flex items-center gap-1.5">
+            <Clock className="h-4 w-4" aria-hidden="true" />
+            {course.cpdHours} CPD hours
+          </li>
+        </ul>
+        <p className="mt-4 flex-1 leading-relaxed text-elevated-navy/80">
+          {course.summary}
+        </p>
+        <p className="mt-6 border-t border-elevated-navy/10 pt-4 font-mukta text-3xl font-bold">
+          {formatAud(course.priceAud)}
+          <span className="ml-1 font-raleway text-sm font-normal text-elevated-navy/60">
+            AUD
+          </span>
+        </p>
+      </div>
+    </article>
+  )
+}
