@@ -6,6 +6,7 @@ import { BundleCard } from "@/components/elevated/bundle-card"
 import { accentClasses } from "@/components/elevated/accents"
 import { CourseCard } from "@/components/elevated/course-card"
 import { ElevatedLogo } from "@/components/elevated/elevated-logo"
+import { HeaderBar, headerButtonClass } from "@/components/site-header"
 import {
   IS_SAMPLE_CATALOGUE,
   allCoursesBundle,
@@ -51,28 +52,24 @@ export default function ElevatedPage() {
   return (
     <>
       {/* Header */}
-      <header className="sticky top-0 z-50 bg-elevated-navy text-elevated-cream shadow-md">
-        <nav className="mx-auto flex h-16 max-w-6xl items-center justify-between px-4">
-          <Link href="/elevated" aria-label="ElevatED home" className="w-36 md:w-44">
-            <ElevatedLogo sizes="176px" priority />
+      <HeaderBar className="bg-elevated-navy">
+        <Link
+          href="/elevated"
+          aria-label="ElevatED home"
+          className="w-28 min-w-0 shrink sm:w-36 md:w-44"
+        >
+          <ElevatedLogo sizes="176px" priority />
+        </Link>
+        <div className="flex shrink-0 items-center gap-2 md:gap-3">
+          <Link href="/" className={headerButtonClass}>
+            <ArrowLeft className="h-3.5 w-3.5 sm:h-4 sm:w-4" aria-hidden="true" />
+            Nativa
           </Link>
-          <div className="flex items-center gap-4 text-sm md:gap-6">
-            <Link
-              href="/"
-              className="flex items-center gap-1.5 text-elevated-cream/80 transition-colors hover:text-elevated-lime"
-            >
-              <ArrowLeft className="h-4 w-4" aria-hidden="true" />
-              Nativa
-            </Link>
-            <a
-              href="#register"
-              className="rounded border border-elevated-lime px-3 py-1.5 font-semibold text-elevated-lime transition-colors hover:bg-elevated-lime hover:text-elevated-navy"
-            >
-              Register
-            </a>
-          </div>
-        </nav>
-      </header>
+          <a href="#register" className={headerButtonClass}>
+            Register
+          </a>
+        </div>
+      </HeaderBar>
 
       <main>
         {/* Hero */}
@@ -113,7 +110,7 @@ export default function ElevatedPage() {
         </section>
 
         {/* Course library */}
-        <section id="courses" className="scroll-mt-16 px-4 py-20">
+        <section id="courses" className="scroll-mt-16 md:scroll-mt-20 px-4 py-20">
           <div className="mx-auto max-w-6xl">
             <h2 className="text-center font-mukta text-4xl font-bold md:text-5xl">Course Library</h2>
             <p className="mx-auto mt-3 max-w-2xl text-center text-lg text-elevated-navy/80">
@@ -190,7 +187,7 @@ export default function ElevatedPage() {
         </section>
 
         {/* Register */}
-        <section id="register" className="scroll-mt-16 bg-elevated-navy px-4 py-24 text-center text-elevated-cream">
+        <section id="register" className="scroll-mt-16 md:scroll-mt-20 bg-elevated-navy px-4 py-24 text-center text-elevated-cream">
           <div className="mx-auto max-w-3xl">
             <h2 className="font-mukta text-4xl font-bold md:text-5xl">
               Ready to elevate your practice?
