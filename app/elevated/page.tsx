@@ -16,7 +16,6 @@ import {
   seriesCpdHours,
   seriesFullPriceAud,
 } from "@/data/courses"
-import { formatAud } from "@/lib/format"
 import { ELEVATED_REGISTER_URL } from "@/lib/links"
 
 const pillars = [
