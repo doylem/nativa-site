@@ -19,8 +19,8 @@ export default function NativaLandingPage() {
       <SiteHeader />
 
       {/* Hero Section */}
-      <section className="min-h-screen flex items-center justify-center bg-nativa-navy">
-        <div className="text-center text-nativa-ivory p-8 pt-24 md:pt-8 mb-16 max-w-4xl mx-auto">
+      <section className="min-h-[calc(100svh-4rem)] md:min-h-[calc(100svh-5rem)] flex items-center justify-center bg-nativa-navy">
+        <div className="text-center text-nativa-ivory p-8 mb-16 max-w-4xl mx-auto">
           <div className="flex justify-center mb-16">
             <Image
               src="/images/brand-v2/nativa-wordmark.svg"
@@ -51,7 +51,7 @@ export default function NativaLandingPage() {
       </section>
 
       {/* Elevate Your Business Section */}
-      <section id="elevate" className="scroll-mt-16 py-20 px-4 bg-nativa-ivory">
+      <section id="elevate" className="scroll-mt-16 md:scroll-mt-20 py-20 px-4 bg-nativa-ivory">
         <div className="max-w-6xl mx-auto">
           <h2 className="text-3xl md:text-5xl font-playfair font-normal mb-4 text-center text-gray-900">
             Elevate Your Business with Nativa
