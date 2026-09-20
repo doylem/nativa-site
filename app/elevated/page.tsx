@@ -1,38 +1,42 @@
 import Link from "next/link"
-import { ArrowLeft, ArrowRight, BadgeCheck, ListChecks, MailCheck, PenLine } from "lucide-react"
+import { ArrowLeft, ArrowRight, BadgeCheck, BookOpen, Stethoscope, Target } from "lucide-react"
 import { Button } from "@/components/ui/button"
+import { BundleCard } from "@/components/elevated/bundle-card"
 import { CourseCard } from "@/components/elevated/course-card"
 import { ElevatedLogo } from "@/components/elevated/elevated-logo"
 import {
   IS_SAMPLE_CATALOGUE,
-  bundle,
-  bundleFullPriceAud,
-  courses,
-  streams,
+  allCoursesBundle,
+  allCoursesCpdHours,
+  allCoursesFullPriceAud,
+  audienceLabels,
+  series,
+  seriesCpdHours,
+  seriesFullPriceAud,
 } from "@/data/courses"
 import { formatAud } from "@/lib/format"
 import { ELEVATED_REGISTER_URL } from "@/lib/links"
 
-const steps = [
+const pillars = [
   {
-    icon: ListChecks,
-    title: "Choose your courses",
-    body: "Browse the catalogue below and pick individual courses or the full bundle.",
-  },
-  {
-    icon: PenLine,
-    title: "Register",
-    body: "Tell us about yourself and which courses you'd like. It only takes a few minutes.",
+    icon: BookOpen,
+    title: "Researched",
+    body: "Grounded in current evidence and clinical literature.",
   },
   {
     icon: BadgeCheck,
-    title: "We verify your registration",
-    body: "ElevatED is for healthcare professionals, so we check your AHPRA registration.",
+    title: "Reviewed",
+    body: "Expert-reviewed for accuracy and clinical relevance.",
   },
   {
-    icon: MailCheck,
-    title: "Start learning",
-    body: "You'll receive your ElevatED login by email with your courses ready to go.",
+    icon: Target,
+    title: "Relevant",
+    body: "Designed for practical application in contemporary clinical practice.",
+  },
+  {
+    icon: Stethoscope,
+    title: "Practical",
+    body: "Translates evidence into confident, real-world clinical practice.",
   },
 ]
 
@@ -81,32 +85,32 @@ export default function ElevatedPage() {
           </div>
         </section>
 
-        {/* How it works */}
+        {/* Evidence-led */}
         <section className="bg-elevated-sage px-4 py-16">
           <div className="mx-auto max-w-6xl">
-            <h2 className="text-center font-mukta text-4xl font-bold">How it works</h2>
-            <ol className="mt-10 grid gap-8 sm:grid-cols-2 lg:grid-cols-4">
-              {steps.map((step, i) => (
-                <li key={step.title} className="text-center">
+            <h2 className="mx-auto max-w-3xl text-center font-mukta text-4xl font-bold">
+              Evidence-led education for Healthcare Professionals
+            </h2>
+            <ul className="mt-10 grid gap-8 sm:grid-cols-2 lg:grid-cols-4">
+              {pillars.map((pillar) => (
+                <li key={pillar.title} className="text-center">
                   <div className="mx-auto flex h-16 w-16 items-center justify-center rounded-full bg-elevated-navy text-elevated-lime">
-                    <step.icon className="h-7 w-7" aria-hidden="true" />
+                    <pillar.icon className="h-7 w-7" aria-hidden="true" />
                   </div>
-                  <h3 className="mt-4 font-mukta text-xl font-bold">
-                    <span className="text-elevated-navy/50">{i + 1}.</span> {step.title}
-                  </h3>
-                  <p className="mt-2 leading-relaxed text-elevated-navy/80">{step.body}</p>
+                  <h3 className="mt-4 font-mukta text-xl font-bold">{pillar.title}</h3>
+                  <p className="mt-2 leading-relaxed text-elevated-navy/80">{pillar.body}</p>
                 </li>
               ))}
-            </ol>
+            </ul>
           </div>
         </section>
 
-        {/* Courses */}
+        {/* Course library */}
         <section id="courses" className="scroll-mt-16 px-4 py-20">
           <div className="mx-auto max-w-6xl">
-            <h2 className="text-center font-mukta text-4xl font-bold md:text-5xl">Courses</h2>
+            <h2 className="text-center font-mukta text-4xl font-bold md:text-5xl">Course Library</h2>
             <p className="mx-auto mt-3 max-w-2xl text-center text-lg text-elevated-navy/80">
-              Practical, evidence-based CPD for prescribers and pharmacists.
+              Practical, evidence-based CPD for prescribers, pharmacists and nurses.
             </p>
             {IS_SAMPLE_CATALOGUE && (
               <p className="mx-auto mt-4 w-fit rounded-full bg-elevated-lime/30 px-4 py-1 text-sm">
@@ -114,51 +118,51 @@ export default function ElevatedPage() {
               </p>
             )}
 
-            {streams.map((stream) => (
-              <div key={stream.id} className="mt-14">
-                <div className="mb-6 border-l-4 border-elevated-lime pl-4">
-                  <h3 className="font-mukta text-3xl font-bold">{stream.label}</h3>
-                  <p className="text-elevated-navy/70">{stream.blurb}</p>
-                </div>
-                <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
-                  {courses
-                    .filter((c) => c.stream === stream.id)
-                    .map((course) => (
+            {series.map((s) => {
+              const fullPrice = seriesFullPriceAud(s)
+              return (
+                <div key={s.id} className="mt-14">
+                  <div className="mb-6 border-l-4 border-elevated-lime pl-4">
+                    <h3 className="font-mukta text-3xl font-bold">{s.label}</h3>
+                    <ul className="mt-2 flex flex-wrap gap-2">
+                      {s.audiences.map((a) => (
+                        <li
+                          key={a}
+                          className="rounded-full bg-elevated-navy/10 px-3 py-0.5 text-sm text-elevated-navy/80"
+                        >
+                          {audienceLabels[a]}
+                        </li>
+                      ))}
+                    </ul>
+                  </div>
+                  <div
+                    className={`grid gap-6 md:grid-cols-2 ${
+                      s.courses.length % 4 === 0 ? "lg:grid-cols-4" : "lg:grid-cols-3"
+                    }`}
+                  >
+                    {s.courses.map((course) => (
                       <CourseCard key={course.id} course={course} />
                     ))}
-                </div>
-              </div>
-            ))}
+                  </div>
 
-            {/* Bundle */}
-            <div className="mt-16 overflow-hidden rounded-lg bg-elevated-navy text-elevated-cream shadow-xl">
-              <div className="flex flex-col gap-8 p-8 md:flex-row md:items-center md:justify-between md:p-12">
-                <div className="max-w-xl">
-                  <p className="text-sm font-semibold uppercase tracking-widest text-elevated-lime">
-                    Best value
-                  </p>
-                  <h3 className="mt-2 font-mukta text-3xl font-bold md:text-4xl">
-                    {bundle.title}
-                  </h3>
-                  <p className="mt-3 text-lg leading-relaxed text-elevated-cream/80">
-                    {bundle.summary}
-                  </p>
+                  {s.bundle && (
+                    <BundleCard
+                      bundle={s.bundle}
+                      fullPriceAud={fullPrice}
+                      cpdHours={seriesCpdHours(s)}
+                    />
+                  )}
                 </div>
-                <div className="shrink-0 md:text-right">
-                  <p className="text-elevated-cream/60 line-through">
-                    {formatAud(bundleFullPriceAud)}
-                  </p>
-                  <p className="font-mukta text-6xl font-bold text-elevated-lime">
-                    {formatAud(bundle.priceAud)}
-                    <span className="ml-1 font-raleway text-base font-normal text-elevated-cream/70">
-                      AUD
-                    </span>
-                  </p>
-                  <p className="mt-2 inline-block rounded-full bg-elevated-lime px-3 py-1 text-sm font-bold text-elevated-navy">
-                    Save {formatAud(bundleFullPriceAud - bundle.priceAud)}
-                  </p>
-                </div>
-              </div>
+              )
+            })}
+
+            <div className="mt-14">
+              <BundleCard
+                bundle={allCoursesBundle}
+                fullPriceAud={allCoursesFullPriceAud}
+                cpdHours={allCoursesCpdHours}
+                eyebrow="Best value: every course"
+              />
             </div>
           </div>
         </section>
