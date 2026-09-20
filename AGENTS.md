@@ -9,7 +9,7 @@ Marketing site for **Nativa Education & Consulting Pty Ltd**, an Australian educ
 
 Next.js 14 App Router, React 18, TypeScript (strict), Tailwind 3, shadcn/ui (new-york style, see `components.json`), lucide-react icons. No tests, no backend, no CMS: all copy is hard-coded JSX.
 
-- `app/layout.tsx`: root layout, `<head>` metadata, favicon/manifest links, loads Playfair Display via `next/font/google`.
+- `app/layout.tsx`: root layout, `<head>` metadata, favicon/manifest links, loads Playfair Display (headings) and DM Sans (body) via `next/font/google`.
 - `app/page.tsx`: the Nativa homepage. One server component, sections in order: Hero, Elevate Your Business (4 service cards), How We Elevate (Prescribers / Clinics / Pharmacists), Our Team, Testimonials, Admired By, Stats, CTA, Footer. `components/site-header.tsx` is its top menu (client component, goes solid on scroll).
 - `app/elevated/`: the ElevatED page. `layout.tsx` loads its fonts and sets `noindex`; `page.tsx` has Header, Hero, How it works, Courses, Bundle, Register, Footer. Card and logo components are in `components/elevated/`.
 - `data/courses.ts`: the ElevatED course catalogue and bundle, as typed arrays. **Currently placeholder data** (`IS_SAMPLE_CATALOGUE = true` shows a "sample courses" notice). Edit courses here, not in JSX.
@@ -39,7 +39,7 @@ The two pages are deliberately different brands. Don't mix their tokens.
 
 - Brand v2 colours are Tailwind tokens in `tailwind.config.ts`: `nativa-navy` (#06121f, header, hero and every dark section), `nativa-lime` (#bec95d, buttons, interactive elements and hover states), `nativa-ivory` (#eae6e2, replaces white for backgrounds and text). Use these rather than raw hex, and don't use plain `white`. The older `nativa-olive`, `nativa-purple`, `nativa-green`, `nativa-pink`, `nativa-orange` and `nativa-white` tokens are no longer used on the landing page.
 - Logos are SVG in `public/images/brand-v2/`: `nativa-wordmark.svg` (hero) and `nativa-monogram.svg` (the N with a dot, used in the header and footer). Originals from the designer are in `brand-v2/source/`. Favicons in `public/` are generated from the monogram on navy.
-- Headings use `font-playfair` (the Tailwind `fontFamily` entry wired to the `--font-playfair` variable). Body text falls back to `font-family: Arial` from `app/globals.css`.
+- Headings use `font-playfair` (the Tailwind `fontFamily` entry wired to the `--font-playfair` variable). Body copy uses DM Sans via `font-body`, set on the landing page root div only. Both fonts are loaded in `app/layout.tsx` with `next/font/google`, so they are self-hosted and preloaded at build time (the build needs network access to fonts.googleapis.com). `/elevated` still falls back to `font-family: Arial` from `app/globals.css` unless it sets its own font.
 - `app/globals.css` contains both the Create Next App `:root` hex vars and the shadcn HSL vars, and they collide on `--background`/`--foreground`. shadcn's semantic colours (`bg-background`, `bg-primary`, etc.) are therefore unreliable; the page styles buttons explicitly with brand classes instead. Follow that pattern or clean up `globals.css` first.
 **ElevatED (`/elevated`)** mirrors the LearnWorlds site so the handoff feels seamless.
 

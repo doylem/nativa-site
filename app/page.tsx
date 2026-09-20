@@ -15,12 +15,12 @@ export default function NativaLandingPage() {
   const currentYear = new Date().getFullYear();
 
   return (
-    <div className="min-h-screen bg-nativa-navy">
+    <div className="min-h-screen bg-nativa-navy font-body">
       <SiteHeader />
 
       {/* Hero Section */}
       <section className="min-h-screen flex items-center justify-center bg-nativa-navy">
-        <div className="text-center text-nativa-ivory p-8 mb-16 max-w-4xl mx-auto">
+        <div className="text-center text-nativa-ivory p-8 pt-24 md:pt-8 mb-16 max-w-4xl mx-auto">
           <div className="flex justify-center mb-16">
             <Image
               src="/images/brand-v2/nativa-wordmark.svg"
@@ -37,10 +37,10 @@ export default function NativaLandingPage() {
             <br />
             <em>Standard Practice</em>
           </h1>
-          <p className="text-base md:text-xl mb-8 max-w-2xl mx-auto leading-relaxed">
-            Our vision is to educate and elevate emerging medicines in Australia
-            and across the globe by fostering a culture of transparency,
-            collaboration, and excellence across all facets of industry.
+          <p className="text-base md:text-2xl mb-8 max-w-2xl mx-auto leading-relaxed">
+            Our mission is to lead the evolution of emerging medicines through
+            trusted education that elevates people, businesses and industry
+            standards.
           </p>
           <Link href="#elevate">
             <Button className="px-16 py-3 bg-nativa-lime text-nativa-navy hover:bg-nativa-lime/85 focus-visible:ring-2 focus-visible:ring-nativa-ivory focus-visible:ring-offset-2 focus-visible:ring-offset-nativa-navy">
@@ -53,7 +53,7 @@ export default function NativaLandingPage() {
       {/* Elevate Your Business Section */}
       <section id="elevate" className="scroll-mt-16 py-20 px-4 bg-nativa-ivory">
         <div className="max-w-6xl mx-auto">
-          <h2 className="text-3xl md:text-4xl font-playfair font-normal mb-4 text-center text-gray-900">
+          <h2 className="text-3xl md:text-5xl font-playfair font-normal mb-4 text-center text-gray-900">
             Elevate Your Business with Nativa
           </h2>
           <p className="text-center text-gray-600 mb-16 max-w-2xl mx-auto">
@@ -157,7 +157,7 @@ export default function NativaLandingPage() {
           />
         </div>
         <div className="relative z-10 max-w-6xl mx-auto">
-          <h2 className="text-3xl md:text-4xl font-playfair font-normal mb-16 text-nativa-ivory text-center">
+          <h2 className="text-3xl md:text-5xl font-playfair font-normal mb-16 text-nativa-ivory text-center">
             Harness our distinctive expertise and forward-thinking approach to
             education to gain a competitive advantage.
           </h2>
@@ -241,7 +241,7 @@ export default function NativaLandingPage() {
       {/* Team Section */}
       <section className="py-20 px-4 bg-nativa-ivory">
         <div className="max-w-6xl mx-auto">
-          <h2 className="text-3xl md:text-4xl font-playfair font-normal mb-16 text-center text-gray-900">
+          <h2 className="text-3xl md:text-5xl font-playfair font-normal mb-16 text-center text-gray-900">
             Our Team
           </h2>
           <div className="space-y-16">
@@ -320,7 +320,7 @@ export default function NativaLandingPage() {
       {/* Testimonials Section */}
       <section className="py-20 px-4 bg-nativa-navy text-nativa-ivory">
         <div className="max-w-6xl mx-auto">
-          <h2 className="text-3xl md:text-4xl font-playfair font-normal mb-16 text-center">
+          <h2 className="text-3xl md:text-5xl font-playfair font-normal mb-16 text-center">
             Testimonials
           </h2>
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
@@ -382,15 +382,18 @@ export default function NativaLandingPage() {
       </section>
 
       {/* Admired By Section */}
-      <section className="py-20 px-4 bg-nativa-ivory">
-        <div className="max-w-4xl mx-auto text-center">
-          <h2 className="text-3xl md:text-4xl font-playfair font-normal mb-4 text-gray-900">
-            Admired by companies
-          </h2>
-          <p className="text-3xl md:text-4xl font-playfair font-normal text-gray-900">
-            and professionals who truly value their{" "}
-            <span className="underline decoration-nativa-lime decoration-4 underline-offset-4">people</span> &amp;{" "}
-            <span className="underline decoration-nativa-lime decoration-4 underline-offset-4">clients</span>.
+      <section className="py-32 md:py-48 px-4 bg-nativa-ivory">
+        <div className="max-w-5xl mx-auto text-center">
+          <p className="text-4xl md:text-5xl font-playfair font-normal leading-tight text-gray-900">
+            Admired by companies and professionals who truly value their{" "}
+            <span className="underline decoration-nativa-lime decoration-4 md:decoration-[6px] underline-offset-8">
+              people
+            </span>{" "}
+            &amp;{" "}
+            <span className="underline decoration-nativa-lime decoration-4 md:decoration-[6px] underline-offset-8">
+              clients
+            </span>
+            .
           </p>
         </div>
       </section>
@@ -440,7 +443,7 @@ export default function NativaLandingPage() {
           <div className="mb-8">
             <ArrowDown className="mx-auto" size={48} />
           </div>
-          <h2 className="text-3xl md:text-4xl font-playfair font-normal mb-6">
+          <h2 className="text-3xl md:text-5xl font-playfair font-normal mb-6">
             A transformational education and consulting practice helping you
             grow your business.
           </h2>
