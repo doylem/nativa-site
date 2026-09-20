@@ -1,12 +1,19 @@
-import Image from "next/image"
-import Link from "next/link"
-import { ArrowLeft, ArrowRight, BadgeCheck, BookOpen, Stethoscope, Target } from "lucide-react"
-import { Button } from "@/components/ui/button"
-import { BundleCard } from "@/components/elevated/bundle-card"
-import { accentClasses } from "@/components/elevated/accents"
-import { CourseCard } from "@/components/elevated/course-card"
-import { ElevatedLogo } from "@/components/elevated/elevated-logo"
-import { HeaderBar, headerButtonClass } from "@/components/site-header"
+import Image from "next/image";
+import Link from "next/link";
+import {
+  ArrowLeft,
+  ArrowRight,
+  BadgeCheck,
+  BookOpen,
+  Stethoscope,
+  Target,
+} from "lucide-react";
+import { Button } from "@/components/ui/button";
+import { BundleCard } from "@/components/elevated/bundle-card";
+import { accentClasses } from "@/components/elevated/accents";
+import { CourseCard } from "@/components/elevated/course-card";
+import { ElevatedLogo } from "@/components/elevated/elevated-logo";
+import { HeaderBar, headerButtonClass } from "@/components/site-header";
 import {
   IS_SAMPLE_CATALOGUE,
   allCoursesBundle,
@@ -16,8 +23,8 @@ import {
   series,
   seriesCpdHours,
   seriesFullPriceAud,
-} from "@/data/courses"
-import { ELEVATED_REGISTER_URL } from "@/lib/links"
+} from "@/data/courses";
+import { ELEVATED_REGISTER_URL } from "@/lib/links";
 
 const pillars = [
   {
@@ -44,14 +51,15 @@ const pillars = [
     badge: "bg-elevated-forest text-elevated-lime",
     body: "Translates evidence into confident, real-world clinical practice.",
   },
-]
+];
 
 export default function ElevatedPage() {
-  const currentYear = new Date().getFullYear()
+  const currentYear = new Date().getFullYear();
 
   return (
     <>
       {/* Header */}
+
       <HeaderBar className="bg-elevated-navy">
         <Link
           href="/elevated"
@@ -60,9 +68,13 @@ export default function ElevatedPage() {
         >
           <ElevatedLogo sizes="176px" priority />
         </Link>
-        <div className="flex shrink-0 items-center gap-2 md:gap-3">
-          <Link href="/" className={headerButtonClass}>
-            <ArrowLeft className="h-3.5 w-3.5 sm:h-4 sm:w-4" aria-hidden="true" />
+
+        <div className="flex shrink-0 items-center gap-4 md:gap-6">
+          <Link
+            href="/"
+            className="flex items-center gap-1.5 text-sm text-elevated-cream/80 transition-colors hover:text-elevated-lime"
+          >
+            <ArrowLeft className="h-4 w-4" aria-hidden="true" />
             Nativa
           </Link>
           <a href="#register" className={headerButtonClass}>
@@ -101,8 +113,12 @@ export default function ElevatedPage() {
                   >
                     <pillar.icon className="h-7 w-7" aria-hidden="true" />
                   </div>
-                  <h3 className="mt-4 font-mukta text-xl font-bold">{pillar.title}</h3>
-                  <p className="mt-2 leading-relaxed text-elevated-navy/80">{pillar.body}</p>
+                  <h3 className="mt-4 font-mukta text-xl font-bold">
+                    {pillar.title}
+                  </h3>
+                  <p className="mt-2 leading-relaxed text-elevated-navy/80">
+                    {pillar.body}
+                  </p>
                 </li>
               ))}
             </ul>
@@ -110,13 +126,18 @@ export default function ElevatedPage() {
         </section>
 
         {/* Course library */}
-        <section id="courses" className="scroll-mt-16 md:scroll-mt-20 px-4 py-20">
+        <section
+          id="courses"
+          className="scroll-mt-16 md:scroll-mt-20 px-4 py-20"
+        >
           <div className="mx-auto max-w-6xl">
-            <h2 className="text-center font-mukta text-4xl font-bold md:text-5xl">Course Library</h2>
+            <h2 className="text-center font-mukta text-4xl font-bold md:text-5xl">
+              Course Library
+            </h2>
             <p className="mx-auto mt-3 max-w-2xl text-center text-lg text-elevated-navy/80">
-              Practical, evidence-based CPD for prescribers, pharmacists and nurses. All
-              courses are accredited by the relevant professional bodies (APC, RACGP and
-              ACRRM).
+              Practical, evidence-based CPD for prescribers, pharmacists and
+              nurses. All courses are accredited by the relevant professional
+              bodies (APC, RACGP and ACRRM).
             </p>
             <Image
               src="/images/elevated/APC_RACGP_ACCRM.png"
@@ -132,10 +153,12 @@ export default function ElevatedPage() {
             )}
 
             {series.map((s) => {
-              const fullPrice = seriesFullPriceAud(s)
+              const fullPrice = seriesFullPriceAud(s);
               return (
                 <div key={s.id} className="mt-14">
-                  <div className={`mb-6 border-l-4 pl-4 ${accentClasses[s.accent].border}`}>
+                  <div
+                    className={`mb-6 border-l-4 pl-4 ${accentClasses[s.accent].border}`}
+                  >
                     <h3 className="font-mukta text-3xl font-bold">{s.label}</h3>
                     <ul className="mt-2 flex flex-wrap gap-2">
                       {s.audiences.map((a) => (
@@ -150,7 +173,9 @@ export default function ElevatedPage() {
                   </div>
                   <div
                     className={`grid gap-6 md:grid-cols-2 ${
-                      s.courses.length % 4 === 0 ? "lg:grid-cols-4" : "lg:grid-cols-3"
+                      s.courses.length % 4 === 0
+                        ? "lg:grid-cols-4"
+                        : "lg:grid-cols-3"
                     }`}
                   >
                     {s.courses.map((course) => (
@@ -171,7 +196,7 @@ export default function ElevatedPage() {
                     />
                   )}
                 </div>
-              )
+              );
             })}
 
             <div className="mt-14">
@@ -187,7 +212,10 @@ export default function ElevatedPage() {
         </section>
 
         {/* Register */}
-        <section id="register" className="scroll-mt-16 md:scroll-mt-20 bg-elevated-navy px-4 py-24 text-center text-elevated-cream">
+        <section
+          id="register"
+          className="scroll-mt-16 md:scroll-mt-20 bg-elevated-navy px-4 py-24 text-center text-elevated-cream"
+        >
           <div className="mx-auto max-w-3xl">
             <h2 className="font-mukta text-4xl font-bold md:text-5xl">
               Ready to elevate your practice?
@@ -201,7 +229,11 @@ export default function ElevatedPage() {
               asChild
               className="mt-10 h-auto rounded-md bg-elevated-lime px-16 py-6 font-mukta text-3xl font-bold text-elevated-navy shadow-lg hover:bg-elevated-cream"
             >
-              <a href={ELEVATED_REGISTER_URL} target="_blank" rel="noopener noreferrer">
+              <a
+                href={ELEVATED_REGISTER_URL}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 Register
                 <ArrowRight className="ml-3 !h-7 !w-7" aria-hidden="true" />
                 <span className="sr-only"> (opens in a new tab)</span>
@@ -219,14 +251,20 @@ export default function ElevatedPage() {
         <div className="mx-auto max-w-6xl space-y-3 border-t border-elevated-cream/10 pt-8">
           <p>
             ElevatED is an education platform by{" "}
-            <Link href="/" className="text-elevated-lime underline-offset-4 hover:underline">
+            <Link
+              href="/"
+              className="text-elevated-lime underline-offset-4 hover:underline"
+            >
               Nativa Education &amp; Consulting
             </Link>
             .
           </p>
-          <p>&copy; {currentYear} Nativa Education &amp; Consulting Pty Ltd. All rights reserved.</p>
+          <p>
+            &copy; {currentYear} Nativa Education &amp; Consulting Pty Ltd. All
+            rights reserved.
+          </p>
         </div>
       </footer>
     </>
-  )
+  );
 }
