@@ -77,6 +77,10 @@ const config: Config = {
           lime: "#bec95d",
           sage: "#edefec",
           mist: "#f4f4f4",
+          // Accent colours from the Nativa brand palette
+          periwinkle: "#464e76",
+          terracotta: "#df7b51",
+          forest: "#142126",
         },
 
         green: {

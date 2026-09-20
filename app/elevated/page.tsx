@@ -1,7 +1,9 @@
+import Image from "next/image"
 import Link from "next/link"
 import { ArrowLeft, ArrowRight, BadgeCheck, BookOpen, Stethoscope, Target } from "lucide-react"
 import { Button } from "@/components/ui/button"
 import { BundleCard } from "@/components/elevated/bundle-card"
+import { accentClasses } from "@/components/elevated/accents"
 import { CourseCard } from "@/components/elevated/course-card"
 import { ElevatedLogo } from "@/components/elevated/elevated-logo"
 import {
@@ -21,21 +23,25 @@ const pillars = [
   {
     icon: BookOpen,
     title: "Researched",
+    badge: "bg-elevated-forest text-elevated-lime",
     body: "Grounded in current evidence and clinical literature.",
   },
   {
     icon: BadgeCheck,
     title: "Reviewed",
+    badge: "bg-elevated-forest text-elevated-lime",
     body: "Expert-reviewed for accuracy and clinical relevance.",
   },
   {
     icon: Target,
     title: "Relevant",
+    badge: "bg-elevated-forest text-elevated-lime",
     body: "Designed for practical application in contemporary clinical practice.",
   },
   {
     icon: Stethoscope,
     title: "Practical",
+    badge: "bg-elevated-forest text-elevated-lime",
     body: "Translates evidence into confident, real-world clinical practice.",
   },
 ]
@@ -94,7 +100,9 @@ export default function ElevatedPage() {
             <ul className="mt-10 grid gap-8 sm:grid-cols-2 lg:grid-cols-4">
               {pillars.map((pillar) => (
                 <li key={pillar.title} className="text-center">
-                  <div className="mx-auto flex h-16 w-16 items-center justify-center rounded-full bg-elevated-navy text-elevated-lime">
+                  <div
+                    className={`mx-auto flex h-16 w-16 items-center justify-center rounded-full ${pillar.badge}`}
+                  >
                     <pillar.icon className="h-7 w-7" aria-hidden="true" />
                   </div>
                   <h3 className="mt-4 font-mukta text-xl font-bold">{pillar.title}</h3>
@@ -110,8 +118,17 @@ export default function ElevatedPage() {
           <div className="mx-auto max-w-6xl">
             <h2 className="text-center font-mukta text-4xl font-bold md:text-5xl">Course Library</h2>
             <p className="mx-auto mt-3 max-w-2xl text-center text-lg text-elevated-navy/80">
-              Practical, evidence-based CPD for prescribers, pharmacists and nurses.
+              Practical, evidence-based CPD for prescribers, pharmacists and nurses. All
+              courses are accredited by the relevant professional bodies (APC, RACGP and
+              ACRRM).
             </p>
+            <Image
+              src="/images/elevated/APC_RACGP_ACCRM.png"
+              alt="Accredited CPD: Australian Pharmacy Council, RACGP CPD Approved Activity, and ACRRM CPD Accredited Activity 2026-2028"
+              width={851}
+              height={315}
+              className="mx-auto mt-6 h-auto w-full max-w-xl"
+            />
             {IS_SAMPLE_CATALOGUE && (
               <p className="mx-auto mt-4 w-fit rounded-full bg-elevated-lime/30 px-4 py-1 text-sm">
                 Sample courses. Final course list and pricing coming soon.
@@ -122,7 +139,7 @@ export default function ElevatedPage() {
               const fullPrice = seriesFullPriceAud(s)
               return (
                 <div key={s.id} className="mt-14">
-                  <div className="mb-6 border-l-4 border-elevated-lime pl-4">
+                  <div className={`mb-6 border-l-4 pl-4 ${accentClasses[s.accent].border}`}>
                     <h3 className="font-mukta text-3xl font-bold">{s.label}</h3>
                     <ul className="mt-2 flex flex-wrap gap-2">
                       {s.audiences.map((a) => (
@@ -141,7 +158,11 @@ export default function ElevatedPage() {
                     }`}
                   >
                     {s.courses.map((course) => (
-                      <CourseCard key={course.id} course={course} />
+                      <CourseCard
+                        key={course.id}
+                        course={course}
+                        barClass={accentClasses[s.accent].bar}
+                      />
                     ))}
                   </div>
 
@@ -150,6 +171,7 @@ export default function ElevatedPage() {
                       bundle={s.bundle}
                       fullPriceAud={fullPrice}
                       cpdHours={seriesCpdHours(s)}
+                      barClasses={[accentClasses[s.accent].bar]}
                     />
                   )}
                 </div>
@@ -162,6 +184,7 @@ export default function ElevatedPage() {
                 fullPriceAud={allCoursesFullPriceAud}
                 cpdHours={allCoursesCpdHours}
                 eyebrow="Best value: every course"
+                barClasses={["bg-elevated-periwinkle"]}
               />
             </div>
           </div>

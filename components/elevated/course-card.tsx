@@ -8,12 +8,18 @@ const formatIcon: Record<CourseFormat, typeof Clock> = {
   Workshop: Presentation,
 }
 
-export function CourseCard({ course }: { course: Course }) {
+export function CourseCard({
+  course,
+  barClass = "bg-elevated-lime",
+}: {
+  course: Course
+  barClass?: string
+}) {
   const FormatIcon = course.format ? formatIcon[course.format] : null
 
   return (
     <article className="flex h-full flex-col overflow-hidden rounded-lg bg-white shadow-sm ring-1 ring-black/5 transition-shadow hover:shadow-lg">
-      <div className="h-1.5 bg-elevated-lime" />
+      <div className={`h-1.5 ${barClass}`} />
       <div className="flex flex-1 flex-col p-6">
         <p className="text-sm font-semibold uppercase tracking-widest text-elevated-navy/60">
           {course.label}

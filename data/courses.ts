@@ -18,6 +18,9 @@ export const audienceLabels: Record<Audience, string> = {
   nurse: "Nurses",
 }
 
+/** Accent colour used for a series (card bars, heading rule, bundle bar). */
+export type Accent = "periwinkle" | "lime"
+
 export type CourseFormat = "On-demand" | "Live webinar" | "Workshop"
 
 export interface Course {
@@ -42,6 +45,7 @@ export interface Bundle {
 export interface Series {
   id: string
   label: string
+  accent: Accent
   audiences: Audience[]
   courses: Course[]
   bundle?: Bundle
@@ -51,6 +55,7 @@ export const series: Series[] = [
   {
     id: "mc-foundations",
     label: "MC Foundations",
+    accent: "periwinkle",
     audiences: ["prescriber", "pharmacist", "nurse"],
     courses: [
       {
@@ -95,6 +100,7 @@ export const series: Series[] = [
   {
     id: "advanced-indications",
     label: "Advanced Indications with Case Study",
+    accent: "lime",
     audiences: ["prescriber", "pharmacist", "nurse"],
     courses: [
       ["chronic-pain", "Chronic Pain"],

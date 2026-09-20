@@ -7,14 +7,24 @@ export function BundleCard({
   fullPriceAud,
   cpdHours,
   eyebrow = "Best value",
+  bgClass = "bg-elevated-navy",
+  barClasses = ["bg-elevated-lime"],
 }: {
   bundle: Bundle
   fullPriceAud: number
   cpdHours: number
   eyebrow?: string
+  bgClass?: string
+  /** Colours of the strip along the top edge, split evenly. */
+  barClasses?: string[]
 }) {
   return (
-    <div className="mt-8 overflow-hidden rounded-lg bg-elevated-navy text-elevated-cream shadow-xl">
+    <div className={`mt-8 overflow-hidden rounded-lg ${bgClass} text-elevated-cream shadow-xl`}>
+      <div className="flex h-2" aria-hidden="true">
+        {barClasses.map((c) => (
+          <div key={c} className={`flex-1 ${c}`} />
+        ))}
+      </div>
       <div className="flex flex-col gap-8 p-8 md:flex-row md:items-center md:justify-between md:p-12">
         <div className="max-w-xl">
           <p className="text-sm font-semibold uppercase tracking-widest text-elevated-lime">
@@ -28,7 +38,7 @@ export function BundleCard({
           </p>
         </div>
         <div className="shrink-0 md:text-right">
-          <p className="font-mukta text-3xl font-bold text-elevated-cream/80 line-through decoration-elevated-lime decoration-4 md:text-4xl">
+          <p className="font-mukta text-3xl font-bold text-elevated-cream/80 line-through decoration-elevated-terracotta decoration-4 md:text-4xl">
             {formatAud(fullPriceAud)}
           </p>
           <p className="font-mukta text-6xl font-bold text-elevated-lime">
@@ -37,7 +47,7 @@ export function BundleCard({
               AUD inc. GST
             </span>
           </p>
-          <p className="mt-3 inline-block rounded-full bg-elevated-lime px-4 py-1.5 text-lg font-bold text-elevated-navy">
+          <p className="mt-3 inline-block rounded-full bg-elevated-terracotta px-4 py-1.5 text-lg font-bold text-elevated-navy">
             Save {formatAud(fullPriceAud - bundle.priceAud)}
           </p>
         </div>
