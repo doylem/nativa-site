@@ -1,10 +1,18 @@
 import type { Metadata } from "next";
-import { Playfair_Display } from "next/font/google";
+import { DM_Sans, Playfair_Display } from "next/font/google";
 import "./globals.css";
 
+// Headings (applied via `font-playfair`).
 const playfair = Playfair_Display({
   subsets: ["latin"],
   variable: "--font-playfair",
+  display: "swap",
+});
+
+// Body copy on the landing page (applied via `font-body`).
+const dmSans = DM_Sans({
+  subsets: ["latin"],
+  variable: "--font-dm-sans",
   display: "swap",
 });
 
@@ -32,7 +40,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${playfair.variable} antialiased`}>{children}</body>
+      <body className={`${playfair.variable} ${dmSans.variable} antialiased`}>{children}</body>
     </html>
   );
 }

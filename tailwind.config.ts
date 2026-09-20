@@ -11,6 +11,7 @@ const config: Config = {
     extend: {
       fontFamily: {
         playfair: ["var(--font-playfair)"],
+        body: ["var(--font-dm-sans)", "Arial", "Helvetica", "sans-serif"],
         mukta: ["var(--font-mukta)"],
         raleway: ["var(--font-raleway)"],
       },
