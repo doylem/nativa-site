@@ -60,9 +60,6 @@ export function SiteHeader() {
           className="h-9 w-auto md:h-10"
         />
       </Link>
-      <Link href="/elevated" className={headerButtonClass}>
-        Education
-      </Link>
     </HeaderBar>
   )
 }
